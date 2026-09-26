@@ -1,0 +1,428 @@
+<title>Analytics Engineer Job Tracker</title>
+<style>
+:root{
+  --bg:#f6f5f1;
+  --surface:#ffffff;
+  --ink:#1e2019;
+  --ink-soft:#5b5d54;
+  --border:#e2e0d8;
+  --accent:#2f5d50;
+  --accent-soft:#e4efe9;
+  --remote:#3468a5;
+  --remote-soft:#e6eef8;
+  --hybrid:#a3752f;
+  --hybrid-soft:#f6ecdc;
+  --onsite:#7a4a6b;
+  --onsite-soft:#f2e6ee;
+  --flag:#b5482f;
+  --flag-soft:#faeae6;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161a;
+    --surface:#1c1f24;
+    --ink:#eceae4;
+    --ink-soft:#9a9d94;
+    --border:#2c2f35;
+    --accent:#7fcbb0;
+    --accent-soft:#1f2e29;
+    --remote:#8bb6e6;
+    --remote-soft:#1b2733;
+    --hybrid:#e0b473;
+    --hybrid-soft:#332a1a;
+    --onsite:#d59bc4;
+    --onsite-soft:#2e2130;
+    --flag:#e58a72;
+    --flag-soft:#332019;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14161a;
+  --surface:#1c1f24;
+  --ink:#eceae4;
+  --ink-soft:#9a9d94;
+  --border:#2c2f35;
+  --accent:#7fcbb0;
+  --accent-soft:#1f2e29;
+  --remote:#8bb6e6;
+  --remote-soft:#1b2733;
+  --hybrid:#e0b473;
+  --hybrid-soft:#332a1a;
+  --onsite:#d59bc4;
+  --onsite-soft:#2e2130;
+  --flag:#e58a72;
+  --flag-soft:#332019;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box;}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  padding-inline:16px;
+}
+.page{
+  max-width:720px;
+  margin:0 auto;
+  padding-block:32px 64px;
+}
+h1,h2,h3{
+  font-family:'Fraunces','Iowan Old Style',serif;
+  font-weight:600;
+  text-wrap:balance;
+  margin:0;
+}
+.masthead{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  margin-bottom:28px;
+}
+.masthead h1{
+  font-size:clamp(1.6rem,5vw,2.1rem);
+  letter-spacing:-0.01em;
+}
+.masthead p{
+  margin:0;
+  color:var(--ink-soft);
+  font-size:0.92rem;
+  max-width:60ch;
+  line-height:1.5;
+}
+.stats{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.stat{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 14px;
+  min-width:110px;
+}
+.stat .n{
+  font-family:'Fraunces',serif;
+  font-size:1.5rem;
+  font-variant-numeric:tabular-nums;
+  line-height:1.1;
+}
+.stat .l{
+  font-size:0.72rem;
+  text-transform:uppercase;
+  letter-spacing:0.05em;
+  color:var(--ink-soft);
+}
+.note{
+  background:var(--flag-soft);
+  border:1px solid color-mix(in srgb, var(--flag) 35%, transparent);
+  border-radius:10px;
+  padding:12px 14px;
+  font-size:0.82rem;
+  line-height:1.5;
+  color:var(--ink);
+}
+.note strong{color:var(--flag);}
+
+.filters{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:20px 0 8px;
+}
+.chip{
+  font-family:inherit;
+  font-size:0.82rem;
+  padding:6px 13px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--ink-soft);
+  cursor:pointer;
+}
+.chip[aria-pressed="true"]{
+  background:var(--ink);
+  color:var(--bg);
+  border-color:var(--ink);
+}
+
+section.group{margin-top:30px;}
+section.group > h2{
+  font-size:1.05rem;
+  color:var(--ink);
+  border-bottom:1px solid var(--border);
+  padding-bottom:8px;
+  margin-bottom:14px;
+  display:flex;
+  align-items:baseline;
+  gap:8px;
+}
+section.group > h2 .count{
+  font-family:'Inter',sans-serif;
+  font-size:0.75rem;
+  color:var(--ink-soft);
+  font-weight:400;
+}
+
+.cards{display:flex;flex-direction:column;gap:10px;}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:14px 16px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.card .top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.card h3{font-size:1.02rem;line-height:1.3;}
+.card .company{
+  font-size:0.85rem;
+  color:var(--ink-soft);
+  margin-top:2px;
+}
+.badge{
+  font-size:0.7rem;
+  text-transform:uppercase;
+  letter-spacing:0.04em;
+  padding:3px 9px;
+  border-radius:999px;
+  white-space:nowrap;
+  font-weight:600;
+}
+.badge.remote{background:var(--remote-soft);color:var(--remote);}
+.badge.hybrid{background:var(--hybrid-soft);color:var(--hybrid);}
+.badge.onsite{background:var(--onsite-soft);color:var(--onsite);}
+
+.meta{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  font-size:0.8rem;
+  color:var(--ink-soft);
+  font-variant-numeric:tabular-nums;
+}
+.meta span b{color:var(--ink);font-weight:600;}
+
+.flag{
+  font-size:0.8rem;
+  line-height:1.45;
+  color:var(--ink-soft);
+  background:var(--accent-soft);
+  border-left:3px solid var(--accent);
+  padding:7px 10px;
+  border-radius:0 6px 6px 0;
+}
+.flag.warn{background:var(--flag-soft);border-left-color:var(--flag);}
+
+.apply{
+  align-self:flex-start;
+  font-size:0.85rem;
+  font-weight:600;
+  color:var(--accent);
+  text-decoration:none;
+  border-bottom:1px solid currentColor;
+}
+
+footer{
+  margin-top:40px;
+  font-size:0.78rem;
+  color:var(--ink-soft);
+  border-top:1px solid var(--border);
+  padding-top:14px;
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<div class="page">
+  <div class="masthead">
+    <h1>Analytics Engineer Job Tracker</h1>
+    <p>Daily-updated matches for an EU citizen based in Germany: fully remote (worldwide/EU/EMEA), onsite in Berlin, or hybrid anywhere in Germany.</p>
+    <div class="stats">
+      <div class="stat"><div class="n" id="stat-new">10</div><div class="l">New today</div></div>
+      <div class="stat"><div class="n" id="stat-total">10</div><div class="l">Total tracked</div></div>
+      <div class="stat"><div class="n">2026-09-26</div><div class="l">Last updated</div></div>
+    </div>
+    <div class="note"><strong>Note:</strong> this run's network access couldn't reach job-board/company-careers domains directly, so listings are cross-referenced across multiple search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
+  </div>
+
+  <div class="filters" role="group" aria-label="Filter by work mode">
+    <button class="chip" data-filter="all" aria-pressed="true">All</button>
+    <button class="chip" data-filter="remote" aria-pressed="false">Remote</button>
+    <button class="chip" data-filter="hybrid" aria-pressed="false">Hybrid-Germany</button>
+    <button class="chip" data-filter="onsite" aria-pressed="false">Onsite-Berlin</button>
+  </div>
+
+  <section class="group">
+    <h2>New today <span class="count">— 2026-09-26</span></h2>
+    <div class="cards" id="new-today"></div>
+  </section>
+
+  <section class="group">
+    <h2>All tracked matches</h2>
+    <div class="cards" id="all-matches"></div>
+  </section>
+
+  <footer>Sources checked: RemoteOK, We Work Remotely, Wellfound, Himalayas, Remote.co, Jobspresso, Otta, Welcome to the Jungle, EU-Startups Jobs, Built In, EuroTechJobs, LandingJobs, LinkedIn, Indeed.de, StepStone, Xing, honeypot.io, Berlin Startup Jobs, plus general web search. Full history and exclusions logged in jobs.md.</footer>
+</div>
+
+<script>
+const JOBS = [
+  {
+    title:"Analytics Engineer - OpenData EMEA (Remote)",
+    company:"Veeva Systems",
+    mode:"remote",
+    modeLabel:"Remote · EMEA (Berlin, DE named)",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Genuinely open to Germany/EU per the listing itself.",
+    url:"https://careers.veeva.com/job/dc0b5a84-05ac-4ff4-941b-01cef16048f2/analytics-engineer-opendata-emea-remote-berlin-germany/",
+    date:"2026-09-26"
+  },
+  {
+    title:"Analytics Engineer (Marketing)",
+    company:"Deel",
+    mode:"remote",
+    modeLabel:"Remote · EMEA",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Deel hires across 80+ countries incl. Germany.",
+    url:"https://jobs.ashbyhq.com/deel/52387a60-4487-4ba8-ab50-b7e6391845a2",
+    date:"2026-09-26"
+  },
+  {
+    title:"Senior Analytics Engineer (gn)",
+    company:"Bikeleasing-Service GmbH & Co. KG",
+    mode:"remote",
+    modeLabel:"Remote · Germany/Austria",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Relocation copy ties the remote arrangement to Germany/Austria residency, not open worldwide-remote — fine for a Germany-based applicant.",
+    url:"https://bikeleasing.jobs.personio.de/job/2609994?language=en",
+    date:"2026-09-26"
+  },
+  {
+    title:"Senior Analytics Engineer",
+    company:"GitLab",
+    mode:"remote",
+    modeLabel:"Remote · region unconfirmed",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"GitLab is all-remote across many countries incl. Germany, but this requisition's exact region tag (EMEA/AMER/Global) couldn't be confirmed — verify eligibility on the live page.",
+    warn:true,
+    url:"https://job-boards.greenhouse.io/gitlab/jobs/8054330002",
+    date:"2026-09-26"
+  },
+  {
+    title:"Analytics Engineer, Buyer, Supply & MLC",
+    company:"Vinted",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Berlin",
+    posted:"~2026-09-18 (8 days ago)",
+    salary:"€57,500–€77,900/yr gross",
+    flag:null,
+    url:"https://careers.vinted.com/jobs/j/4671471101",
+    date:"2026-09-26"
+  },
+  {
+    title:"Senior Analytics Engineer (Int'l Sales & Revenue Data Team)",
+    company:"Delivery Hero",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Berlin",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:null,
+    url:"https://careers.deliveryhero.com/job/senior-analytics-engineer-in-berlin-germany-jid-4611",
+    date:"2026-09-26"
+  },
+  {
+    title:"Staff Analytics Engineer (AdTech)",
+    company:"Delivery Hero",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Berlin",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:null,
+    url:"https://careers.deliveryhero.com/job/staff-analytics-engineer-adtech-in-berlin-germany-jid-4324",
+    date:"2026-09-26"
+  },
+  {
+    title:"Senior Data Analytics Engineer (m/f/d)",
+    company:"adsquare GmbH",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Berlin",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Hybrid plus up to 3 months/yr remote flexibility; 6+ yrs experience expected.",
+    url:"https://adsquare.jobs.personio.de/job/2049611?language=en",
+    date:"2026-09-26"
+  },
+  {
+    title:"Analytics Engineer / Data Generalist (m/f/d)",
+    company:"Flix (FlixBus)",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Munich",
+    posted:"~2026-09-15 (11 days ago)",
+    salary:"not disclosed",
+    flag:null,
+    url:"https://flix.careers/job/?jobid=8012220002",
+    date:"2026-09-26"
+  },
+  {
+    title:"Founding Analytics Engineer",
+    company:"PERGOLUX",
+    mode:"onsite",
+    modeLabel:"Onsite-Berlin",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"PERGOLUX also has open Finance & Operations / Marketing & Growth Analytics Engineer roles, not individually tracked here.",
+    url:"https://jobs.ashbyhq.com/pergolux/d32d608c-27ea-44b7-97d7-664d69e5b10e",
+    date:"2026-09-26"
+  }
+];
+
+function cardHTML(j){
+  const flagHTML = j.flag ? `<div class="flag${j.warn?' warn':''}">${j.flag}</div>` : '';
+  return `<article class="card" data-mode="${j.mode}">
+    <div class="top">
+      <div>
+        <h3>${j.title}</h3>
+        <div class="company">${j.company}</div>
+      </div>
+      <span class="badge ${j.mode}">${j.mode}</span>
+    </div>
+    <div class="meta">
+      <span>${j.modeLabel}</span>
+      <span>Posted: <b>${j.posted}</b></span>
+      <span>Salary: <b>${j.salary}</b></span>
+    </div>
+    ${flagHTML}
+    <a class="apply" href="${j.url}" target="_blank" rel="noopener">View posting &amp; apply →</a>
+  </article>`;
+}
+
+document.getElementById('new-today').innerHTML = JOBS.map(cardHTML).join('');
+document.getElementById('all-matches').innerHTML = JOBS.map(cardHTML).join('');
+
+const chips = document.querySelectorAll('.chip');
+chips.forEach(chip=>{
+  chip.addEventListener('click', ()=>{
+    chips.forEach(c=>c.setAttribute('aria-pressed','false'));
+    chip.setAttribute('aria-pressed','true');
+    const mode = chip.dataset.filter;
+    document.querySelectorAll('.card').forEach(card=>{
+      card.hidden = !(mode==='all' || card.dataset.mode===mode);
+    });
+  });
+});
+</script>
