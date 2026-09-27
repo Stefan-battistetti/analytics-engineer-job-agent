@@ -1,5 +1,38 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-09-27
+
+**Environment note:** Same as the prior run — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested (careers.deliveryhero.com, google.com, builtin.com, arbeitnow.com) returned `EGRESS_BLOCKED`. Liveness/eligibility below is inferred by cross-referencing each posting across 2+ independent search sources (aggregator + company ATS/direct careers link where possible), not by fetching the live page. Recommend a manual click-through before applying.
+
+### Remote
+
+- **Senior Analytics Engineer** — Job&Talent — Remote (EMEA) — Posted: unknown — Salary: not disclosed — [Apply](https://jobs.lever.co/jobandtalent/fe817188-f051-4bcf-9adf-3171ed261bd3)
+  - Madrid-HQ'd, remote-first across 9+ European/American markets; company has advertised European visa sponsorship on a related requisition. No Germany-specific restriction found.
+- **Senior Analytics Engineer - Growth (m/f/d)** — 1KOMMA5° — Remote (Germany-wide, optional offices Hamburg/Berlin/Munich) — Posted: unknown — Salary: not disclosed — [Apply](https://1komma5grad.jobs.personio.de/job/2622556?language=en)
+  - Explicitly remote Germany-wide — trivially open to a Germany-based applicant.
+- **Senior Analytics Engineer** — Alpaca — Remote (100% remote company, 20+ countries) — Posted: unknown — Salary: not disclosed — [Apply](https://job-boards.greenhouse.io/alpaca/jobs/6129946004)
+  - FLAGGED: confirmed team locations from research were USA, Canada, Hungary, Japan, Brazil, Spain, Philippines, Nigeria, UK — Germany was not explicitly confirmed among eligible countries. Verify on the live posting before applying.
+
+### Hybrid-Germany
+
+- **Senior Analytics Engineer, Consumer** — Wolt — Hybrid-Germany (Berlin; role also open in Stockholm/Helsinki) — Posted: unknown — Salary: not disclosed — [Apply](https://careers.wolt.com/en/jobs/1/8006892)
+  - Candidate can work hybrid, office, or remote within the chosen location.
+- **(Senior) Analytics Engineer (m/f/x)** — Scalable Capital — Hybrid-Germany (Berlin) — Posted: unknown — Salary: not disclosed — [Apply](https://jobs.smartrecruiters.com/ScalableGmbH/744000123721360--senior-analytics-engineer-m-f-x-)
+  - Company notes remote-friendly work "anywhere in Germany"; role listed at the Berlin office.
+
+### Onsite-Berlin
+
+- **Senior Analytics Engineer - Finance & Operations** — PERGOLUX — Onsite-Berlin — Posted: unknown — Salary: not disclosed — [Apply](https://jobs.ashbyhq.com/pergolux/221fe640-69a4-40cf-9183-5621f324adc6)
+  - Separate requisition from the previously tracked PERGOLUX Analytics Engineer role — same onsite-Berlin company; PERGOLUX also has an Analytics Engineer – Marketing & Growth req that mirror sites (freehire, zapply) reference but that had no confirmable live direct-ATS URL, so it was not included this run.
+
+### Excluded this run (stale or ineligible, for reference)
+
+- Eraneos, Analytics Engineer (all genders) (Hamburg/Munich/Düsseldorf, remote option) — posted ~Aug 3, 2026, last updated ~Sep 1, 2026 — older than the 14-day freshness window.
+- N26, Senior Analytics Engineer (AEGE team, Berlin) — a mirror listing explicitly indicated "no longer accepting applications."
+- Insify, Data Analyst / Analytics Engineer — role is hybrid in Amsterdam, Netherlands, not Germany.
+- Jobgether-brokered "Senior Data & Analytics Engineer" (Ireland-based listing) — Jobgether reposts anonymized/brokered roles and eligible-country lists couldn't be confirmed for Germany; skipped rather than guessed.
+- GrowthLoop, Toast, Cambiar Education (CEMD), Tailscale — US-only or US-based-required per listing text.
+
 ## 2026-09-26
 
 **Environment note:** This run's outbound network access blocked direct fetches to job-board and company-careers domains (only anthropic.com/github.com reachable), so the usual "fetch the live page to confirm it's not expired" check could not be done. Instead, each listing below was cross-referenced across 2+ independent search sources (aggregator + company ATS where possible) for freshness and region eligibility. Recommend a manual click-through before applying, and consider widening this environment's network access for future runs so full liveness verification can resume.

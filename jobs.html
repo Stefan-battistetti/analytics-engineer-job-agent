@@ -249,11 +249,11 @@ footer{
     <h1>Analytics Engineer Job Tracker</h1>
     <p>Daily-updated matches for an EU citizen based in Germany: fully remote (worldwide/EU/EMEA), onsite in Berlin, or hybrid anywhere in Germany.</p>
     <div class="stats">
-      <div class="stat"><div class="n" id="stat-new">10</div><div class="l">New today</div></div>
-      <div class="stat"><div class="n" id="stat-total">10</div><div class="l">Total tracked</div></div>
-      <div class="stat"><div class="n">2026-09-26</div><div class="l">Last updated</div></div>
+      <div class="stat"><div class="n" id="stat-new">6</div><div class="l">New today</div></div>
+      <div class="stat"><div class="n" id="stat-total">16</div><div class="l">Total tracked</div></div>
+      <div class="stat"><div class="n">2026-09-27</div><div class="l">Last updated</div></div>
     </div>
-    <div class="note"><strong>Note:</strong> this run's network access couldn't reach job-board/company-careers domains directly, so listings are cross-referenced across multiple search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
+    <div class="note"><strong>Note:</strong> this run's network access couldn't reach job-board/company-careers domains directly (only anthropic.com/github.com reachable through the sandboxed egress proxy), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
   </div>
 
   <div class="filters" role="group" aria-label="Filter by work mode">
@@ -264,13 +264,13 @@ footer{
   </div>
 
   <section class="group">
-    <h2>New today <span class="count">— 2026-09-26</span></h2>
+    <h2>New today <span class="count">— 2026-09-27</span></h2>
     <div class="cards" id="new-today"></div>
   </section>
 
-  <section class="group">
+  <section class="group" id="all-matches-section">
     <h2>All tracked matches</h2>
-    <div class="cards" id="all-matches"></div>
+    <div id="all-matches"></div>
   </section>
 
   <footer>Sources checked: RemoteOK, We Work Remotely, Wellfound, Himalayas, Remote.co, Jobspresso, Otta, Welcome to the Jungle, EU-Startups Jobs, Built In, EuroTechJobs, LandingJobs, LinkedIn, Indeed.de, StepStone, Xing, honeypot.io, Berlin Startup Jobs, plus general web search. Full history and exclusions logged in jobs.md.</footer>
@@ -388,8 +388,81 @@ const JOBS = [
     flag:"PERGOLUX also has open Finance & Operations / Marketing & Growth Analytics Engineer roles, not individually tracked here.",
     url:"https://jobs.ashbyhq.com/pergolux/d32d608c-27ea-44b7-97d7-664d69e5b10e",
     date:"2026-09-26"
+  },
+  {
+    title:"Senior Analytics Engineer - Finance & Operations",
+    company:"PERGOLUX",
+    mode:"onsite",
+    modeLabel:"Onsite-Berlin",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Separate requisition from PERGOLUX's other tracked Analytics Engineer role — same onsite-Berlin company.",
+    url:"https://jobs.ashbyhq.com/pergolux/221fe640-69a4-40cf-9183-5621f324adc6",
+    date:"2026-09-27"
+  },
+  {
+    title:"Senior Analytics Engineer",
+    company:"Job&Talent",
+    mode:"remote",
+    modeLabel:"Remote · EMEA",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Madrid-HQ'd, remote-first across 9+ European/American markets; company has advertised European visa sponsorship on other reqs. No Germany-specific restriction found.",
+    url:"https://jobs.lever.co/jobandtalent/fe817188-f051-4bcf-9adf-3171ed261bd3",
+    date:"2026-09-27"
+  },
+  {
+    title:"Senior Analytics Engineer - Growth (m/f/d)",
+    company:"1KOMMA5°",
+    mode:"remote",
+    modeLabel:"Remote · Germany-wide",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Explicitly remote Germany-wide, with optional offices in Hamburg, Berlin or Munich.",
+    url:"https://1komma5grad.jobs.personio.de/job/2622556?language=en",
+    date:"2026-09-27"
+  },
+  {
+    title:"Senior Analytics Engineer, Consumer",
+    company:"Wolt",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Berlin",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Role also open in Stockholm/Helsinki; candidate can work hybrid, office, or remote within the chosen location.",
+    url:"https://careers.wolt.com/en/jobs/1/8006892",
+    date:"2026-09-27"
+  },
+  {
+    title:"(Senior) Analytics Engineer (m/f/x)",
+    company:"Scalable Capital",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Berlin",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Company notes remote-friendly work \"anywhere in Germany\"; role listed at the Berlin office.",
+    url:"https://jobs.smartrecruiters.com/ScalableGmbH/744000123721360--senior-analytics-engineer-m-f-x-",
+    date:"2026-09-27"
+  },
+  {
+    title:"Senior Analytics Engineer",
+    company:"Alpaca",
+    mode:"remote",
+    modeLabel:"Remote · 100% remote company",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"FLAGGED: Alpaca is 100% remote across 20+ countries, but the countries confirmed in research (USA, Canada, Hungary, Japan, Brazil, Spain, Philippines, Nigeria, UK) don't explicitly include Germany — verify Germany/EU eligibility on the live posting before applying.",
+    warn:true,
+    url:"https://job-boards.greenhouse.io/alpaca/jobs/6129946004",
+    date:"2026-09-27"
   }
 ];
+
+const TODAY = "2026-09-27";
+const newToday = JOBS.filter(j=>j.date===TODAY);
+const byDate = {};
+JOBS.forEach(j=>{ (byDate[j.date] = byDate[j.date] || []).push(j); });
+const dates = Object.keys(byDate).sort().reverse();
 
 function cardHTML(j){
   const flagHTML = j.flag ? `<div class="flag${j.warn?' warn':''}">${j.flag}</div>` : '';
@@ -411,8 +484,14 @@ function cardHTML(j){
   </article>`;
 }
 
-document.getElementById('new-today').innerHTML = JOBS.map(cardHTML).join('');
-document.getElementById('all-matches').innerHTML = JOBS.map(cardHTML).join('');
+document.getElementById('new-today').innerHTML = newToday.map(cardHTML).join('') || '<p style="color:var(--ink-soft);font-size:0.9rem;">No new matches today.</p>';
+
+document.getElementById('all-matches').innerHTML = dates.map(d => `
+  <div class="cards" style="margin-bottom:22px;">
+    <div style="font-size:0.78rem;color:var(--ink-soft);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;">${d}</div>
+    ${byDate[d].map(cardHTML).join('')}
+  </div>
+`).join('');
 
 const chips = document.querySelectorAll('.chip');
 chips.forEach(chip=>{
