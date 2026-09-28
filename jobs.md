@@ -1,5 +1,37 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-09-28
+
+**Environment note:** Same as prior runs — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to job-board/company-careers domains returned `EGRESS_BLOCKED` again this run. Liveness/eligibility below is inferred by cross-referencing each posting across 2+ independent search sources, not by fetching the live page. Recommend a manual click-through before applying.
+
+### Hybrid-Germany
+
+- **Senior Analytics Engineer (d/f/m)** — Personio — Hybrid-Germany (Munich; also Berlin/London/Madrid/Dublin) — Posted: ~14 days ago — Salary: not disclosed — [Apply](https://www.personio.com/careers/senior-analytics-engineer-dfm-875e09692c21/)
+  - Central Analytics Engineering team; hybrid from one of several offices including Munich or Berlin.
+- **Analytics Engineer** — Trade Republic — Hybrid/Onsite-Berlin — Posted: unknown — Salary: not disclosed — [Apply](https://traderepublic.com/en-de/about?jobId=6589276003&gh_jid=6589276003)
+  - No explicit remote-work terms found; Trade Republic is Berlin-HQ'd with an office-centric culture — confirm exact office-day expectations before applying.
+
+### Onsite-Berlin
+
+- **(Junior) Analytics Engineer** — Gemma Analytics — Onsite-Berlin — Posted: unknown — Salary: not disclosed — [Apply](https://join.com/companies/gemmaanalytics/14070920-junior-analytics-engineer)
+  - Small Berlin data consultancy (office near Nordbahnhof); English-speaking, entry-friendly role.
+
+### Remote
+
+- **EU I Analytics Engineer** — Infinite Lambda — Remote (EU, distributed consultancy) — Posted: ~4 days ago — Salary: not disclosed — [Apply](https://builtin.com/job/eu-i-analytics-engineer/7998588)
+  - FLAGGED: confirmed team countries (UK, France, Hungary, Slovakia, Bulgaria, Vietnam, Italy, Romania) don't explicitly list Germany despite the "EU" role name — verify eligibility before applying. No direct ATS link found; using the Built In listing page.
+
+### Excluded this run (stale or ineligible, for reference)
+
+- Upsun (formerly Platform.sh), Senior Analytics Engineer (Remote FR/DE/ES/UK) — posted Sept 9, 2026 (~19 days ago), older than the 14-day freshness window.
+- Avantgarde, Analytics Engineer / BI Expert for Corporate Finance (Munich) — essentially onsite with only ~3 weeks/year remote allowance; doesn't fit Onsite-Berlin, genuine Hybrid-Germany, or Germany-wide-remote criteria.
+- Grammarly, Analytics Engineer — role explicitly requires being based in San Francisco or NYC despite appearing in "remote Germany" aggregator search snippets.
+- MANIKO Nails GmbH (formerly listed as "Manikonailsgmbh"), Senior Analytics Engineer (remote, all genders) — mirrored identically across Feb–Apr 2026 postings (stale, ~5+ months old) with generic/boilerplate copy; low confidence, excluded.
+- Entyre, Senior Marketing Analytics Engineer (Berlin) — underlying Arbeitnow scrape dated April 2026; stale.
+- Intercom, Senior Analytics Engineer (Berlin) — Arbeitnow posting dated April 21, 2026; stale.
+- Cosuno, Senior Analytics Engineer (Germany Remote/Berlin) — same evergreen listing tracked as stale in the 2026-09-27 run (originates ~July 2026); an aggregator's "2 days ago" badge didn't match corroborating sources, so treated as stale again.
+- FUNKE Mediengruppe, Analytics Engineer (Berlin/Essen/Hamburg, hybrid) — no confirmable recent posting date and a long-standing multi-mirror presence suggests an evergreen listing; skipped rather than guessed.
+
 ## 2026-09-27
 
 **Environment note:** Same as the prior run — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested (careers.deliveryhero.com, google.com, builtin.com, arbeitnow.com) returned `EGRESS_BLOCKED`. Liveness/eligibility below is inferred by cross-referencing each posting across 2+ independent search sources (aggregator + company ATS/direct careers link where possible), not by fetching the live page. Recommend a manual click-through before applying.
