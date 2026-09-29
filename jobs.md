@@ -1,5 +1,40 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-09-29
+
+**Environment note:** Same as prior runs — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (careers.deliveryhero.com, job-boards.eu.greenhouse.io, contabo.jobs.personio.de) returned `EGRESS_BLOCKED`. Liveness/eligibility below is inferred by cross-referencing each posting across 2+ independent search sources, not by fetching the live page. Recommend a manual click-through before applying.
+
+### Remote
+
+- **Senior Analytics Engineer (all genders)** — Contabo GmbH — Remote (Germany; remote-first, hybrid/onsite optional near an office) — Posted: unknown — Salary: ~€43,200–€72,000/year (per aggregator estimate) — [Apply](https://contabo.jobs.personio.de/job/2361125?language=de)
+  - Remote-first company; candidate can choose hybrid or fully remote. Requires 6+ years BI/analytics experience.
+- **Web/Data Analytics Engineer (Mensch)** — Taikonauten GmbH & Co. KG — Remote or Berlin office (candidate's choice) — Posted: unknown — Salary: not disclosed — [Apply](https://join.com/companies/taikonauten/13307980-web-analytics-engineer-mensch)
+  - Small Berlin digital agency; listing explicitly allows "Berlin office or remote." Region eligibility beyond Germany not confirmed — verify before applying if not Germany-based.
+
+### Hybrid-Germany
+
+- **BI Specialist* / Analytics Engineer*** — inovex GmbH — Hybrid-Germany (Karlsruhe; home-office option) — Posted: ~12 days ago — Salary: not disclosed — [Apply](https://www.inovex.de/de/karriere/stellenangebote/bi-specialist-analytics-engineer/)
+  - FLAGGED: role requires German language fluency (C1) plus English — confirm this fits before applying if you're not a German speaker.
+
+### Onsite-Berlin
+
+- **(Senior) Analytics Engineer — Fleet Analytics** — MOIA GmbH (VW Group) — Onsite/Berlin (company also has a Hamburg office) — Posted: unknown — Salary: not disclosed — [Apply](https://job-boards.eu.greenhouse.io/moia/jobs/4711563101)
+  - Central data-transformation role for MOIA's fleet domain. Company has advertised visa sponsorship on related reqs — no EU/Germany restriction found.
+- **Senior Analytics Engineer — Shop Analytics (all genders)** — ABOUT YOU SE & Co. KG — Onsite (Hamburg or Berlin, candidate's choice) — Posted: unknown — Salary: not disclosed — [Apply](https://jobs.smartrecruiters.com/ABOUTYOUGmbH/744000122062608-senior-analytics-engineer-shop-analytics-all-genders-)
+  - Builds data pipelines for shop performance/retail-media partner reporting. Berlin is an explicit office option.
+- **Senior Analytics Engineer — Web Tracking (Storefront, all genders)** — ABOUT YOU SE & Co. KG — Onsite (Hamburg or Berlin, candidate's choice) — Posted: unknown — Salary: not disclosed — [Apply](https://jobs.smartrecruiters.com/ABOUTYOUGmbH/744000128476309-senior-analytics-engineer-web-tracking-all-genders-storefront)
+  - Builds e-commerce tracking/measurement infrastructure for a multi-tenant storefront platform. Berlin is an explicit office option.
+
+### Excluded this run (stale or ineligible, for reference)
+
+- ABOUT YOU, (Senior) Analytics Engineer — Shop Analytics ("Customer Shop Intelligence") and Analytics Engineer — Supply Data Solutions and Senior Analytics Engineer — Sponsored Content & Products — all Hamburg-only per the corporate careers page, no Berlin option confirmed; doesn't meet Onsite-Berlin/Hybrid-Germany criteria as worded (Hamburg-only onsite).
+- N26, Junior Analytics Engineer (Berlin) — same requisition family previously flagged as "no longer accepting applications" in an earlier run; not re-verified live this run, skipped out of caution.
+- Grammarly, Analytics Engineer (remote, surfaced again as "hiring remotely in Germany" in one search snippet) — prior runs confirmed this specific req requires San Francisco/NYC base; treated as still excluded absent contrary evidence.
+- Eraneos, Analytics Engineer (Hamburg/Munich/Düsseldorf, remote option) — still outside the ~14-day freshness window (posted ~Aug 2026).
+- Turner & Townsend "Data & Analytics Engineer" — could not confirm a Germany-specific requisition; results only surfaced US/Chicago and Greece listings under similar titles.
+- CuspAI Data Engineer (hybrid, Berlin among 4 locations) — role title is Data Engineer, not Analytics Engineer; doesn't match the search criteria.
+- eyeo — no confirmable "Analytics Engineer" requisition found (only Commercial Operations Analyst).
+
 ## 2026-09-28
 
 **Environment note:** Same as prior runs — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to job-board/company-careers domains returned `EGRESS_BLOCKED` again this run. Liveness/eligibility below is inferred by cross-referencing each posting across 2+ independent search sources, not by fetching the live page. Recommend a manual click-through before applying.
