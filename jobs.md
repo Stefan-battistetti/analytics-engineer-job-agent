@@ -1,5 +1,30 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-09-30
+
+**Environment note:** Same as every prior run — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (linkedin.com, remoteok.com, jobs.ashbyhq.com, job-boards.greenhouse.io) returned `EGRESS_BLOCKED` again. Liveness/eligibility below is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page. Recommend a manual click-through before applying. This is day 5 of scraping a heavily-covered space — most companies previously tracked (Delivery Hero, ABOUT YOU, Personio, Scalable, PERGOLUX, etc.) resurfaced with the same reqs already in memory; only genuinely new requisitions are listed below.
+
+### Hybrid-Germany
+
+- **Analytics Engineer (f/m/x)** — Expatrio Global Services GmbH — Hybrid-Germany (Berlin office near U Rosenthaler Platz, or remote anywhere within Germany) — Posted: unknown — Salary: not disclosed — [Apply](https://expatrio.jobs.personio.de/job/1424528?language=en)
+  - Berlin-based fintech/edtech startup (helps international students in Germany); builds data lake/warehouse infrastructure.
+- **Analytics Engineer (d/f/m)** — Personio — Hybrid-Germany (Munich; also Berlin/London/Dublin) — Posted: ~2 days ago — Salary: not disclosed — [Apply](https://builtin.com/job/analytics-engineer-dfm/3763511)
+  - Distinct, non-senior requisition from Personio's previously tracked Senior Analytics Engineer role — builds cross-functional data products and the central data warehouse.
+
+### Onsite-Berlin
+
+- **Analytics Engineer (m/f/d)** — Flink — Onsite-Berlin (Brunnenstraße) — Posted: unknown — Salary: not disclosed — [Apply](https://jobs.smartrecruiters.com/Flink3/744000062996628-analytics-engineer-m-f-d-)
+  - Embedded Data Analyst role within Operations at the quick-commerce company; builds dbt/BigQuery models and LookML dashboards for stakeholders.
+
+### Excluded this run (stale or ineligible, for reference)
+
+- Grammarly, Analytics Engineer (job-boards.greenhouse.io/grammarly/jobs/7194790) — same recurring listing excluded in the 2026-09-28 run; sources conflict (hub-based SF/NYC/Berlin quarterly model vs. a claimed "Germany" req) and couldn't be resolved without live-page access — treated as still excluded absent clear confirmation.
+- Celonis, Staff Product Analytics Engineer — search results show this requisition primarily located in Palo Alto, CA (also Bangalore); Munich office page showed no open roles — excluded as not confirmed Germany-based.
+- BeReal, (Staff) Analytics Engineer — Paris-HQ'd, no remote-to-Germany or Berlin option found; doesn't fit any of the three eligible categories.
+- PermitFlow, Analytics Engineer — US construction-permitting startup, posting dated ~August 2025 (over a year old) and no Germany/EU eligibility signal; stale and excluded.
+- Avantgarde, Analytics Engineer / BI Expert for Corporate Finance (Munich) — same role already excluded in the 2026-09-28 run (mostly onsite, ~3 weeks/year remote allowance only).
+- Eraneos, Analytics Engineer (Hamburg/Munich/Düsseldorf) — same listing already excluded in the 2026-09-29 run as outside the ~14-day freshness window.
+
 ## 2026-09-29
 
 **Environment note:** Same as prior runs — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (careers.deliveryhero.com, job-boards.eu.greenhouse.io, contabo.jobs.personio.de) returned `EGRESS_BLOCKED`. Liveness/eligibility below is inferred by cross-referencing each posting across 2+ independent search sources, not by fetching the live page. Recommend a manual click-through before applying.

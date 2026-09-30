@@ -249,9 +249,9 @@ footer{
     <h1>Analytics Engineer Job Tracker</h1>
     <p>Daily-updated matches for an EU citizen based in Germany: fully remote (worldwide/EU/EMEA), onsite in Berlin, or hybrid anywhere in Germany.</p>
     <div class="stats">
-      <div class="stat"><div class="n" id="stat-new">6</div><div class="l">New today</div></div>
-      <div class="stat"><div class="n" id="stat-total">26</div><div class="l">Total tracked</div></div>
-      <div class="stat"><div class="n">2026-09-29</div><div class="l">Last updated</div></div>
+      <div class="stat"><div class="n" id="stat-new">3</div><div class="l">New today</div></div>
+      <div class="stat"><div class="n" id="stat-total">29</div><div class="l">Total tracked</div></div>
+      <div class="stat"><div class="n">2026-09-30</div><div class="l">Last updated</div></div>
     </div>
     <div class="note"><strong>Note:</strong> as with prior runs, this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
   </div>
@@ -264,7 +264,7 @@ footer{
   </div>
 
   <section class="group">
-    <h2>New today <span class="count">— 2026-09-29</span></h2>
+    <h2>New today <span class="count">— 2026-09-30</span></h2>
     <div class="cards" id="new-today"></div>
   </section>
 
@@ -568,10 +568,43 @@ const JOBS = [
     flag:"Builds e-commerce tracking/measurement infrastructure for a multi-tenant storefront platform. Berlin is an explicit office option.",
     url:"https://jobs.smartrecruiters.com/ABOUTYOUGmbH/744000128476309-senior-analytics-engineer-web-tracking-all-genders-storefront",
     date:"2026-09-29"
+  },
+  {
+    title:"Analytics Engineer (f/m/x)",
+    company:"Expatrio Global Services GmbH",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Berlin (remote anywhere within Germany)",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Berlin-based fintech/edtech startup; hybrid model lets you work remotely anywhere within Germany or from the Berlin office near U Rosenthaler Platz.",
+    url:"https://expatrio.jobs.personio.de/job/1424528?language=en",
+    date:"2026-09-30"
+  },
+  {
+    title:"Analytics Engineer (m/f/d)",
+    company:"Flink",
+    mode:"onsite",
+    modeLabel:"Onsite-Berlin",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Embedded Data Analyst role within Operations; builds dbt/BigQuery models and LookML for stakeholders. Quick-commerce company, Berlin HQ.",
+    url:"https://jobs.smartrecruiters.com/Flink3/744000062996628-analytics-engineer-m-f-d-",
+    date:"2026-09-30"
+  },
+  {
+    title:"Analytics Engineer (d/f/m)",
+    company:"Personio",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Munich (also Berlin/London/Dublin)",
+    posted:"~2 days ago",
+    salary:"not disclosed",
+    flag:"Separate, non-senior requisition from Personio's other tracked Senior Analytics Engineer role. Hybrid from Munich or Berlin among other hub offices.",
+    url:"https://builtin.com/job/analytics-engineer-dfm/3763511",
+    date:"2026-09-30"
   }
 ];
 
-const TODAY = "2026-09-29";
+const TODAY = "2026-09-30";
 const newToday = JOBS.filter(j=>j.date===TODAY);
 const byDate = {};
 JOBS.forEach(j=>{ (byDate[j.date] = byDate[j.date] || []).push(j); });
