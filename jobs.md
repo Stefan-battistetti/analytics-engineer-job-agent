@@ -1,5 +1,36 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-10-01
+
+**Environment note:** Same as every prior run (day 7) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (remoteok.com, databerlin.net, jobs.softgames.de, jobs.smartrecruiters.com, www.thermondo.de) returned `EGRESS_BLOCKED` again. Liveness/eligibility below is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page. Recommend a manual click-through before applying. Most companies already tracked (ABOUT YOU, Delivery Hero, PERGOLUX, Personio, etc.) resurfaced with the same reqs already in memory; only genuinely new requisitions are listed below.
+
+### Onsite-Berlin
+
+- **Senior Analytics Engineer (m/f/d)** — Thermondo GmbH — Onsite-Berlin — Posted: ~8 days ago — Salary: not disclosed — [Apply](https://www.thermondo.de/unternehmen/jobs/zentrale-job/1922249/)
+  - Climate-tech heating company (Berlin HQ); builds GCP (BigQuery/Dataflow/Pub-Sub) pipelines and Looker/Tableau dashboards. 5+ years experience required. No remote mention found in sources — treated as onsite.
+
+### Remote
+
+- **Head of Analytics Engineering** — SOFTGAMES (Mobile Entertainment Services GmbH) — Remote (Germany-based company, fully remote) — Posted: unknown — Salary: not disclosed — [Apply](https://jobs.softgames.de/o/head-of-analytics-engineering-fully-remote)
+  - FLAGGED: leadership-level (Head of) role rather than an individual-contributor Analytics Engineer position — included since it sits within the analytics engineering family at a Berlin-based, remote-first company, but confirm seniority fit before applying.
+
+### Hybrid-Germany
+
+- **Analytics Engineer (all genders) - Supply Data Solutions** — ABOUT YOU SE & Co. KG — Hybrid-Germany (Hamburg) — Posted: unknown — Salary: not disclosed — [Apply](https://jobs.smartrecruiters.com/ABOUTYOUGmbH/744000147445859-analytics-engineer-all-genders-supply-data-solutions?oga=true)
+  - Distinct requisition from ABOUT YOU's other tracked (onsite Hamburg/Berlin) Analytics Engineer roles — this one is confirmed hybrid, full-time, based in Hamburg. Builds Python/GCP/BigQuery pipelines and data contracts for supply operations.
+
+### Excluded this run (stale or ineligible, for reference)
+
+- apaleo, Senior Analytics Engineer (Munich) — could not confirm a currently open Analytics Engineer requisition on apaleo's live Greenhouse board; only a Senior Data Platform Engineer role was confirmed open. Excluded pending a confirmable direct listing.
+- N26, Analytics Engineer / Junior Analytics Engineer (Berlin) — confirmed removed (Built In listings show these specific reqs removed Apr 30, 2025 and Feb 21, 2025 respectively); stale/dead postings resurfacing in aggregator search results.
+- Statista, Data & Analytics Engineer (m/f/d) (Hamburg/Berlin, hybrid) — confirmed posted July 22, 2026 (~2+ months old); older than the 14-day freshness window.
+- Natsana GmbH (gloryfeel x natsana), (Senior) Analytics Engineer (Remote Germany/Düsseldorf/Hamburg) — posted ~1 month ago per source; older than the 14-day freshness window.
+- Glow25 (Primal State Performance GmbH), Senior Analytics Engineer — Data Generalist (Remote Germany) — underlying Remotive listing dated April 2025 (~1.5 years old); stale.
+- Glow25 (Primal State Performance GmbH), (Junior) Analytics Engineer (Rottendorf) — no confirmable recent posting date, and the company's other Analytics Engineer req (above) is confirmed stale; skipped rather than risk a recycled listing.
+- Paddle, Senior Analytics Engineer (remote) — confirmed remote-eligible countries are UK, Portugal and Ireland only; no Germany eligibility found — excluded as region-restricted.
+- Swoon (Swoon Editions), Analytics Engineer (remote) — confirmed remote-UK-only; not Germany/EU-eligible.
+- Similarweb, Analytics Engineer (Prague, posted ~2 days ago) — Czech Republic location, not Germany; doesn't fit any of the three eligible categories.
+
 ## 2026-09-30
 
 **Environment note:** Same as every prior run — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (linkedin.com, remoteok.com, jobs.ashbyhq.com, job-boards.greenhouse.io) returned `EGRESS_BLOCKED` again. Liveness/eligibility below is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page. Recommend a manual click-through before applying. This is day 5 of scraping a heavily-covered space — most companies previously tracked (Delivery Hero, ABOUT YOU, Personio, Scalable, PERGOLUX, etc.) resurfaced with the same reqs already in memory; only genuinely new requisitions are listed below.

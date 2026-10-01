@@ -250,10 +250,10 @@ footer{
     <p>Daily-updated matches for an EU citizen based in Germany: fully remote (worldwide/EU/EMEA), onsite in Berlin, or hybrid anywhere in Germany.</p>
     <div class="stats">
       <div class="stat"><div class="n" id="stat-new">3</div><div class="l">New today</div></div>
-      <div class="stat"><div class="n" id="stat-total">29</div><div class="l">Total tracked</div></div>
-      <div class="stat"><div class="n">2026-09-30</div><div class="l">Last updated</div></div>
+      <div class="stat"><div class="n" id="stat-total">32</div><div class="l">Total tracked</div></div>
+      <div class="stat"><div class="n">2026-10-01</div><div class="l">Last updated</div></div>
     </div>
-    <div class="note"><strong>Note:</strong> as with prior runs, this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
+    <div class="note"><strong>Note:</strong> as with every prior run (day 7), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
   </div>
 
   <div class="filters" role="group" aria-label="Filter by work mode">
@@ -264,7 +264,7 @@ footer{
   </div>
 
   <section class="group">
-    <h2>New today <span class="count">— 2026-09-30</span></h2>
+    <h2>New today <span class="count">— 2026-10-01</span></h2>
     <div class="cards" id="new-today"></div>
   </section>
 
@@ -601,10 +601,44 @@ const JOBS = [
     flag:"Separate, non-senior requisition from Personio's other tracked Senior Analytics Engineer role. Hybrid from Munich or Berlin among other hub offices.",
     url:"https://builtin.com/job/analytics-engineer-dfm/3763511",
     date:"2026-09-30"
+  },
+  {
+    title:"Senior Analytics Engineer (m/f/d)",
+    company:"Thermondo GmbH",
+    mode:"onsite",
+    modeLabel:"Onsite-Berlin",
+    posted:"~8 days ago",
+    salary:"not disclosed",
+    flag:"Climate-tech heating company, Berlin HQ; 5+ yrs experience, builds GCP (BigQuery/Dataflow/Pub-Sub) pipelines and Looker/Tableau dashboards. No remote mention found — treated as onsite.",
+    url:"https://www.thermondo.de/unternehmen/jobs/zentrale-job/1922249/",
+    date:"2026-10-01"
+  },
+  {
+    title:"Head of Analytics Engineering",
+    company:"SOFTGAMES (Mobile Entertainment Services GmbH)",
+    mode:"remote",
+    modeLabel:"Remote · Germany-based company, fully remote",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"FLAGGED: this is a leadership-level (Head of) role rather than an individual-contributor Analytics Engineer position — included since it's within the analytics engineering family and Berlin-based/remote-first, but confirm seniority fit before applying.",
+    warn:true,
+    url:"https://jobs.softgames.de/o/head-of-analytics-engineering-fully-remote",
+    date:"2026-10-01"
+  },
+  {
+    title:"Analytics Engineer (all genders) - Supply Data Solutions",
+    company:"ABOUT YOU SE & Co. KG",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Hamburg",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Different requisition from ABOUT YOU's other tracked (onsite) Analytics Engineer roles — this one is confirmed hybrid, full-time, based in Hamburg.",
+    url:"https://jobs.smartrecruiters.com/ABOUTYOUGmbH/744000147445859-analytics-engineer-all-genders-supply-data-solutions?oga=true",
+    date:"2026-10-01"
   }
 ];
 
-const TODAY = "2026-09-30";
+const TODAY = "2026-10-01";
 const newToday = JOBS.filter(j=>j.date===TODAY);
 const byDate = {};
 JOBS.forEach(j=>{ (byDate[j.date] = byDate[j.date] || []).push(j); });
