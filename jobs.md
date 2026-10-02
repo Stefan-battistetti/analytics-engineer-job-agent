@@ -1,5 +1,33 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-10-02
+
+**Environment note:** Same as every prior run (day 8) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (remoteok.com, www.arbeitnow.com, databerlin.net, careers.distribusion.com, careers.trustedshops.com, join.com, tier-mobility.join.com, job-boards.greenhouse.io) returned `EGRESS_BLOCKED` again. Liveness/eligibility below is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page. Recommend a manual click-through before applying.
+
+### Remote
+
+- **Analytics Engineer (all genders)** — Distribusion Technologies — Remote-first, Berlin HQ (office optional) — Posted: ~1 day ago — Salary: not disclosed — [Apply](https://www.arbeitnow.com/jobs/companies/distribusion-technologies/analytics-engineer-all-genders-berlin-376263)
+  - Remote-first travel-tech company with teams globally; Berlin HQ office is optional, team meets there periodically. Visa sponsorship available, English-speaking workplace. Owns the dbt project/semantic layer for the Data Platform team.
+
+### Hybrid-Germany
+
+- **Analytics Engineer (m/w/d)** — FUNKE Mediengruppe — Hybrid-Germany (Berlin, Essen, or Hamburg) — Posted: unknown — Salary: not disclosed — [Apply](https://karriere.media/find-analytics-engineer-mwd-job-in-berlin-de-at-funke-4488)
+  - FLAGGED: requires German language fluency alongside English — confirm before applying if you're not a German speaker. Builds dbt/BigQuery data models on GCP for the Data Subscription Team.
+- **Analytics Engineer (m/f/d)** — Omio — Hybrid-Germany (Berlin) — Posted: unknown — Salary: not disclosed — [Apply](https://www.smartrecruiters.com/Omio1/744000061501015-analytics-engineer-m-f-d-)
+  - FLAGGED: mid-level (2+ yrs experience) role; hybrid with Berlin-based team plus up to 6 weeks/year worldwide remote allowance. No confirmable posting date via search — verify it's still active before applying.
+
+### Excluded this run (stale or ineligible, for reference)
+
+- Creditsafe Deutschland GmbH, Analytics Engineer (m/w/d) (Berlin/Vienna, hybrid) — published 05.02.2025 (~20 months old); far outside the 14-day freshness window.
+- getolo (Dentolo), Mid-level Analytics Engineer (m/f/d) (Berlin, hybrid) — confirmed by search snippet: "this job posting from March 11, 2025 is no longer available for applications." Expired.
+- TIER Mobility, Analytics Engineer – Marketing (m/f/d) (Berlin, join.com) — confirmed posted June 1, 2021; extremely stale recycled aggregator listing.
+- TIER Mobility, Senior Analytics Engineer (m/f/d) — same req also surfaces tagged Budapest and Kraków in different sources; couldn't confirm a live, dated Germany-based posting — excluded pending confirmation.
+- Flix SE, Analytics Engineer/Data Generalist (m/f/d) (Munich) — confirmed by search snippet: posting from September 2025 "no longer available for applications." Expired.
+- Trusted Shops SE, Principal Analytics Engineer (f/m/d) (Cologne hybrid or Berlin remote) — confirmed posted June 30, 2026, last updated September 1, 2026 (~31 days old); outside the ~14-day freshness window, though worth a manual check given the Berlin-remote option — role is senior/principal level.
+- wherever SIM GmbH, Analytics Engineer – ELT & Datamodeling (m/f/x) (Hamburg, hybrid) — the company's live join.com careers page currently shows only one open role ("Sales Development Representative Fokus Frankreich"); the Analytics Engineer req is not present on their current board — treated as filled/expired.
+- payabl., Analytics Engineer (Data Quality & Lakehouse Transformations / Data Quality & Insights) — could not confirm a Frankfurt or other Germany-based location for currently open reqs; one listing found specifies Lisbon, Portugal — excluded pending Germany-eligibility confirmation.
+- Eraneos, Analytics Engineer (Hamburg/Munich/Düsseldorf) — same listing already excluded in the 2026-09-29 and 2026-09-30 runs as outside the ~14-day freshness window.
+
 ## 2026-10-01
 
 **Environment note:** Same as every prior run (day 7) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (remoteok.com, databerlin.net, jobs.softgames.de, jobs.smartrecruiters.com, www.thermondo.de) returned `EGRESS_BLOCKED` again. Liveness/eligibility below is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page. Recommend a manual click-through before applying. Most companies already tracked (ABOUT YOU, Delivery Hero, PERGOLUX, Personio, etc.) resurfaced with the same reqs already in memory; only genuinely new requisitions are listed below.

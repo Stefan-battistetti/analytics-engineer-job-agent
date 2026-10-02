@@ -250,10 +250,10 @@ footer{
     <p>Daily-updated matches for an EU citizen based in Germany: fully remote (worldwide/EU/EMEA), onsite in Berlin, or hybrid anywhere in Germany.</p>
     <div class="stats">
       <div class="stat"><div class="n" id="stat-new">3</div><div class="l">New today</div></div>
-      <div class="stat"><div class="n" id="stat-total">32</div><div class="l">Total tracked</div></div>
-      <div class="stat"><div class="n">2026-10-01</div><div class="l">Last updated</div></div>
+      <div class="stat"><div class="n" id="stat-total">35</div><div class="l">Total tracked</div></div>
+      <div class="stat"><div class="n">2026-10-02</div><div class="l">Last updated</div></div>
     </div>
-    <div class="note"><strong>Note:</strong> as with every prior run (day 7), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
+    <div class="note"><strong>Note:</strong> as with every prior run (day 8), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
   </div>
 
   <div class="filters" role="group" aria-label="Filter by work mode">
@@ -264,7 +264,7 @@ footer{
   </div>
 
   <section class="group">
-    <h2>New today <span class="count">— 2026-10-01</span></h2>
+    <h2>New today <span class="count">— 2026-10-02</span></h2>
     <div class="cards" id="new-today"></div>
   </section>
 
@@ -635,10 +635,45 @@ const JOBS = [
     flag:"Different requisition from ABOUT YOU's other tracked (onsite) Analytics Engineer roles — this one is confirmed hybrid, full-time, based in Hamburg.",
     url:"https://jobs.smartrecruiters.com/ABOUTYOUGmbH/744000147445859-analytics-engineer-all-genders-supply-data-solutions?oga=true",
     date:"2026-10-01"
+  },
+  {
+    title:"Analytics Engineer (all genders)",
+    company:"Distribusion Technologies",
+    mode:"remote",
+    modeLabel:"Remote-first · Berlin HQ (office optional)",
+    posted:"~1 day ago",
+    salary:"not disclosed",
+    flag:"Remote-first company with teams globally; Berlin HQ office optional, team meets there periodically. Visa sponsorship available, English-speaking workplace.",
+    url:"https://www.arbeitnow.com/jobs/companies/distribusion-technologies/analytics-engineer-all-genders-berlin-376263",
+    date:"2026-10-02"
+  },
+  {
+    title:"Analytics Engineer (m/w/d)",
+    company:"FUNKE Mediengruppe",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Berlin, Essen or Hamburg",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"FLAGGED: role requires German language fluency alongside English — confirm this fits before applying if you're not a German speaker.",
+    warn:true,
+    url:"https://karriere.media/find-analytics-engineer-mwd-job-in-berlin-de-at-funke-4488",
+    date:"2026-10-02"
+  },
+  {
+    title:"Analytics Engineer (m/f/d)",
+    company:"Omio",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Berlin",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Mid-level role (2+ yrs experience); hybrid with Berlin-based team plus up to 6 weeks/year worldwide remote. Posting date not confirmable via search — verify it's still active before applying.",
+    warn:true,
+    url:"https://www.smartrecruiters.com/Omio1/744000061501015-analytics-engineer-m-f-d-",
+    date:"2026-10-02"
   }
 ];
 
-const TODAY = "2026-10-01";
+const TODAY = "2026-10-02";
 const newToday = JOBS.filter(j=>j.date===TODAY);
 const byDate = {};
 JOBS.forEach(j=>{ (byDate[j.date] = byDate[j.date] || []).push(j); });
