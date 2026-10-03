@@ -250,10 +250,10 @@ footer{
     <p>Daily-updated matches for an EU citizen based in Germany: fully remote (worldwide/EU/EMEA), onsite in Berlin, or hybrid anywhere in Germany.</p>
     <div class="stats">
       <div class="stat"><div class="n" id="stat-new">3</div><div class="l">New today</div></div>
-      <div class="stat"><div class="n" id="stat-total">35</div><div class="l">Total tracked</div></div>
-      <div class="stat"><div class="n">2026-10-02</div><div class="l">Last updated</div></div>
+      <div class="stat"><div class="n" id="stat-total">38</div><div class="l">Total tracked</div></div>
+      <div class="stat"><div class="n">2026-10-03</div><div class="l">Last updated</div></div>
     </div>
-    <div class="note"><strong>Note:</strong> as with every prior run (day 8), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
+    <div class="note"><strong>Note:</strong> as with every prior run (day 9), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
   </div>
 
   <div class="filters" role="group" aria-label="Filter by work mode">
@@ -264,7 +264,7 @@ footer{
   </div>
 
   <section class="group">
-    <h2>New today <span class="count">— 2026-10-02</span></h2>
+    <h2>New today <span class="count">— 2026-10-03</span></h2>
     <div class="cards" id="new-today"></div>
   </section>
 
@@ -670,10 +670,45 @@ const JOBS = [
     warn:true,
     url:"https://www.smartrecruiters.com/Omio1/744000061501015-analytics-engineer-m-f-d-",
     date:"2026-10-02"
+  },
+  {
+    title:"Senior Analytics Engineer (Analytics Engineering & Governance Enablement)",
+    company:"N26",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Berlin",
+    posted:"~today",
+    salary:"not disclosed",
+    flag:"Very fresh posting (aggregator showed \"posted 2 hours ago\"). Builds N26's dbt services/CI-CD/data-quality tooling. Visa sponsorship & relocation support offered.",
+    url:"https://jobs.earlybird.com/companies/n26/jobs/74688056-senior-analytics-engineer",
+    date:"2026-10-03"
+  },
+  {
+    title:"Analytics Engineer (w/m/d)",
+    company:"sikwel GmbH",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Oldenburg (home-office possible)",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Small data/BI consultancy. No posted-date metadata found via search, but cross-verified as currently open (own careers page, Glassdoor, freehire) with no expiration signal — verify freshness manually.",
+    warn:true,
+    url:"https://sikwel-gmbh.jobs.personio.de/job/714417?language=de",
+    date:"2026-10-03"
+  },
+  {
+    title:"Analytics Engineer",
+    company:"Aklamio",
+    mode:"onsite",
+    modeLabel:"Onsite-Berlin",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"FLAGGED: 12-month fixed-term contract covering parental leave (possible extension to permanent). No posted-date metadata found, but no expiration signal either — verify it's still open before applying.",
+    warn:true,
+    url:"https://builtin.com/job/analytics-engineer/8144215",
+    date:"2026-10-03"
   }
 ];
 
-const TODAY = "2026-10-02";
+const TODAY = "2026-10-03";
 const newToday = JOBS.filter(j=>j.date===TODAY);
 const byDate = {};
 JOBS.forEach(j=>{ (byDate[j.date] = byDate[j.date] || []).push(j); });

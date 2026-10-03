@@ -1,5 +1,38 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-10-03
+
+**Environment note:** Same as every prior run (day 9) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (linkedin.com, natsana.jobs.personio.de, sikwel-gmbh.jobs.personio.de) returned `EGRESS_BLOCKED` again. Liveness/eligibility below is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page. Recommend a manual click-through before applying.
+
+### Hybrid-Germany
+
+- **Senior Analytics Engineer (Analytics Engineering & Governance Enablement team)** — N26 — Hybrid-Berlin — Posted: ~today (aggregator showed "posted 2 hours ago") — Salary: not disclosed — Visa sponsorship & relocation support offered (open to international/EU candidates) — [Apply](https://jobs.earlybird.com/companies/n26/jobs/74688056-senior-analytics-engineer)
+  - Builds/operates N26's dbt services, CI/CD pipelines, and data-quality tooling for the data warehouse/lakehouse. Very fresh posting, cross-verified across freehire.me, meetfrank, zapply, and bebee.
+- **Analytics Engineer (w/m/d)** — sikwel GmbH — Hybrid-Germany (Oldenburg, home-office possible) — Posted: unknown, no date surfaced via search — Salary: not disclosed — [Apply](https://sikwel-gmbh.jobs.personio.de/job/714417?language=de)
+  - Small data/BI consultancy; role sits at the intersection of tech and business (Power BI, SQL, dbt, data modeling). Cross-verified as currently open via sikwel's own career page, Glassdoor, and freehire.me — no expiration signal found, but no posted-date metadata either, so verify freshness manually before applying.
+
+### Onsite-Berlin
+
+- **Analytics Engineer** — Aklamio — Onsite-Berlin — Posted: unknown, no date surfaced via search — Salary: not disclosed — FLAGGED: this is a 12-month fixed-term contract covering parental leave (possible extension to permanent) — [Apply](https://builtin.com/job/analytics-engineer/8144215)
+  - BI/analytics role for Product and Revenue teams at this Berlin-based incentive-marketing company. No expiration signal found across sources, but no posted-date metadata either — verify it's still open before applying.
+
+### Excluded this run (stale or ineligible, for reference)
+
+- Celonis, Analytics Engineer (Data & Transformation team) — confirmed location Madrid, Spain, not Germany — region-ineligible.
+- Ärzte ohne Grenzen e.V. (MSF), Advanced Analytics Engineer (f/m/d) (Berlin) — listing shows an application deadline of June 20, 2025 (~16 months old) — expired.
+- Cosuno, Senior Analytics Engineer (Germany Remote, €80-100k) — originally posted ~June 29, 2026, last updated August 14, 2026 (~7 weeks old) — outside the ~14-day freshness window despite being an attractive, genuinely eligible role.
+- Statista, Analytics Engineer - Reporting Platform (m/f/d) (Hamburg, hybrid) — confirmed by search snippet: listing "removed on Thursday, April 23, 2026" — expired.
+- Natsana (gloryfeel x natsana), (Senior) Analytics Engineer (w/m/d) (Düsseldorf/Hamburg/remote) — confirmed via remotive.com as archived, originally posted April 3, 2025 — expired.
+- Avantgarde, Analytics Engineer / BI Expert for Corporate Finance (m/f/x) (Munich, hybrid) — posted January 12, 2026 (~9 months old) — outside freshness window.
+- Octopus Energy Group, Analytics Engineer - Cost Modelling (m/w/d) — confirmed on-site only in Munich (not Berlin, not hybrid) — excluded as onsite outside Berlin.
+- Octopus Energy Group, Operations Analytics Engineer (m/w/d) (Munich/Berlin, hybrid) — posted December 11, 2025 (~10 months old) — outside freshness window.
+- Octopus Energy Group, Analytics Engineer (general) (Munich/Berlin) — posted September 9, 2026 (~24 days old) — outside the ~14-day freshness window.
+- Zefir, Staff Analytics Engineer - Data Platform (Paris or full remote) — posted August 11, 2026, last updated August 31, 2026 (~33 days old) — outside freshness window; region eligibility for a Germany-based EU remote applicant was also not explicitly confirmed (Paris-centric startup, no stated exclusion either).
+- N26, Senior Marketing Analytics Engineer — confirmed location Barcelona, Spain, not Germany — region-ineligible (distinct from the eligible Berlin AEGE role listed above).
+- Wayfair, Analytics Engineer Intern (m/f/x) (Berlin) — internship, not a professional Analytics Engineer role, and one source (Welcome to the Jungle) shows it no longer available — excluded.
+- BLS Beteiligungs GmbH / Bikeleasing Group, (Senior) Analytics Engineer (gn) (Munich, hybrid) — description matches the already-tracked "Senior Analytics Engineer (gn)" at Bikeleasing-Service Deutschland (personio listing already in memory) — treated as a duplicate of a previously-seen req, not counted as new.
+- Many large Berlin employers already tracked (Trade Republic, Scalable Capital, 1KOMMA5°, Deel, ABOUT YOU, Delivery Hero, etc.) resurfaced with the same reqs already in memory — only genuinely new requisitions are listed above.
+
 ## 2026-10-02
 
 **Environment note:** Same as every prior run (day 8) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (remoteok.com, www.arbeitnow.com, databerlin.net, careers.distribusion.com, careers.trustedshops.com, join.com, tier-mobility.join.com, job-boards.greenhouse.io) returned `EGRESS_BLOCKED` again. Liveness/eligibility below is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page. Recommend a manual click-through before applying.
