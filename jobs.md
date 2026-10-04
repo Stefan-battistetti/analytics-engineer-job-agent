@@ -1,5 +1,35 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-10-04
+
+**Environment note:** Same as every prior run (day 10) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (arbeitnow.com, job-boards.eu.greenhouse.io) returned `EGRESS_BLOCKED` again. Liveness/eligibility below is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page. Recommend a manual click-through before applying.
+
+### Remote
+
+- **Senior Analytics Engineer** — Upsun (formerly Platform.sh) — Remote · France/Germany/Spain/UK — Posted: same day (freehire aggregator showed "posted 10 hours ago") — Salary: not disclosed — No visa sponsorship offered, but Germany is explicitly named as an eligible hiring country — [Apply](https://job-boards.greenhouse.io/remotewoman/jobs/8659416002)
+  - Data Science & Engineering team; builds DBT/medallion-architecture data models and owns metric design on GCP data tools. Cross-verified across Greenhouse (Remote Woman board), Welcome to the Jungle, and WeAreDevelopers, all independently confirming the France/Germany/Spain/UK remote eligibility. Very fresh posting.
+
+### Excluded this run (stale or ineligible, for reference)
+
+- Parloa, Senior Analytics Engineer (Berlin) — Welcome to the Jungle listing confirmed no longer available.
+- Kaia Health, Analytics Engineer (Berlin) — Welcome to the Jungle listing confirmed no longer available.
+- Cadeia, Data Analytics Engineer (m/w/d) - FinTech (Berlin) — old-style numeric join.com/LinkedIn IDs, no freshness signal found — excluded as unverifiable.
+- Trade Republic, Analytics Engineer - Risk Management Tech (f/d/m) (Berlin) — distinct req from the two Trade Republic listings already tracked, but one source indicated the listing is no longer accepting applications — excluded pending confirmation.
+- Grammarly, Analytics Engineer (remote, Germany-eligible per company hiring footprint) — Glassdoor shows posted 2025-08-29 (~13 months old) — outside freshness window.
+- Eraneos, Analytics Engineer (all genders) (Hamburg/Munich/Düsseldorf, hybrid+remote) — confirmed posted 2026-03-17 (~7 months old) — outside freshness window. Also requires German B1.
+- Toggl, Analytics Engineer (worldwide remote, UTC-4 to UTC+8 — genuinely EU-eligible) — We Work Remotely shows posted Jun 27, 2026 (~99 days old) — outside freshness window despite being an attractive, eligible role.
+- Swoon, Analytics Engineer (remote) — region restricted to United Kingdom — region-ineligible.
+- Tailscale, Analytics Engineer (remote) — North America/UK-centric hiring footprint; continental-EU/Germany hiring appears limited/case-by-case — excluded as ineligible pending confirmation.
+- Coinbase, Analytics Engineer - GFCO Analytics (remote) — explicitly listed as "Remote - USA"; also had an application deadline of August 21, 2026 already passed — region-ineligible and expired.
+- Platform.sh/Upsun, Analytics Engineer (non-senior, remote) — Himalayas shows posted 2026-02-23, valid through 2026-04-24 (expired) and region limited to Spain/UK — excluded (distinct from the eligible Senior Analytics Engineer req listed above).
+- Similarweb, Analytics Engineer in Data Collection (Prague) — confirmed hybrid 3 days/week in Prague office — excluded as hybrid outside Germany.
+- SumUp, Senior Analytics Engineer (Acquisition / Run & Grow) (Berlin) — Glassdoor/LinkedIn show posted ~30 days / 1 month ago — outside freshness window.
+- Almedia, Analytics Engineer (Berlin, €90-140k) — Arbeitnow job metadata shows posted 2026-02-16 (~8 months old) — outside freshness window.
+- Wunderflats, Analytics Engineer (f/m/d) (Berlin) — the specific job ID could not be re-confirmed on Wunderflats' live Greenhouse board this run (only a "Working Student - Analytics Engineering" and a "Principal Data Analyst" req were confirmed open) — treated as closed/redirected, excluded.
+- LimeFlight, Senior Data & Analytics Engineer (Europe, 100% remote) — same generic listing appears duplicated across multiple cities/countries (Berlin, Zürich) with no confirmable original posted date — excluded as unverifiable/likely a recycled template listing.
+- ABOUT YOU, Analytics Engineer (Supply Data Solutions) (Germany remote) — duplicate of already-tracked requisition.
+- Many large Berlin employers already tracked (N26, Trade Republic, Delivery Hero, ABOUT YOU, etc.) resurfaced with the same reqs already in memory — only genuinely new requisitions are listed above.
+
 ## 2026-10-03
 
 **Environment note:** Same as every prior run (day 9) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (linkedin.com, natsana.jobs.personio.de, sikwel-gmbh.jobs.personio.de) returned `EGRESS_BLOCKED` again. Liveness/eligibility below is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page. Recommend a manual click-through before applying.
