@@ -249,11 +249,11 @@ footer{
     <h1>Analytics Engineer Job Tracker</h1>
     <p>Daily-updated matches for an EU citizen based in Germany: fully remote (worldwide/EU/EMEA), onsite in Berlin, or hybrid anywhere in Germany.</p>
     <div class="stats">
-      <div class="stat"><div class="n" id="stat-new">1</div><div class="l">New today</div></div>
+      <div class="stat"><div class="n" id="stat-new">0</div><div class="l">New today</div></div>
       <div class="stat"><div class="n" id="stat-total">39</div><div class="l">Total tracked</div></div>
-      <div class="stat"><div class="n">2026-10-04</div><div class="l">Last updated</div></div>
+      <div class="stat"><div class="n">2026-10-05</div><div class="l">Last updated</div></div>
     </div>
-    <div class="note"><strong>Note:</strong> as with every prior run (day 10), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
+    <div class="note"><strong>Note:</strong> as with every prior run (day 11), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
   </div>
 
   <div class="filters" role="group" aria-label="Filter by work mode">
@@ -264,7 +264,7 @@ footer{
   </div>
 
   <section class="group">
-    <h2>New today <span class="count">— 2026-10-04</span></h2>
+    <h2>New today <span class="count">— 2026-10-05</span></h2>
     <div class="cards" id="new-today"></div>
   </section>
 
@@ -719,7 +719,7 @@ const JOBS = [
   }
 ];
 
-const TODAY = "2026-10-04";
+const TODAY = "2026-10-05";
 const newToday = JOBS.filter(j=>j.date===TODAY);
 const byDate = {};
 JOBS.forEach(j=>{ (byDate[j.date] = byDate[j.date] || []).push(j); });

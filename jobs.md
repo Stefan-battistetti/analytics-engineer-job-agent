@@ -1,5 +1,28 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-10-05
+
+**Environment note:** Same as every prior run (day 11) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (remoteok.com, expatrio.jobs.personio.de, eraneos.jobs.personio.de, www.sumup.com) returned `EGRESS_BLOCKED` again. Liveness/eligibility is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
+
+**No new eligible matches today.** Ran ~25 search queries across remote/EU, Berlin-onsite, and hybrid-Germany categories. Every candidate surfaced was either already tracked, outside the ~14-day freshness window, region-ineligible, or unverifiable. Nothing new cleared the bar.
+
+### Investigated and excluded this run
+
+- Upsun/Platform.sh, Staff/other Analytics Engineer reqs (remote, Germany-eligible) — distinct from the already-tracked Senior req; no fresher req found.
+- TaxDome, Staff Analytics Engineer (remote, Europe/Asia timezones — genuinely Germany-eligible) — posted 2026-09-14 (~21 days old) — outside the ~14-day freshness window despite being an attractive, eligible role. Apply link: https://careers.taxdome.com/v/216969-staff-analytics-engineer — worth a manual look if still open.
+- Blue Orange Digital, Analytics Engineer (Power BI Specialist), fixed 26-week engagement, remote across Europe incl. Berlin — posted ~129 days ago — stale, and structured as a fixed-term consulting engagement rather than a permanent role.
+- Entyre, Senior Marketing Analytics Engineer (Berlin) — posted ~183 days ago — stale.
+- Creditsafe Deutschland, Analytics Engineer (m/w/d) (Berlin, hybrid) — published 2025-02-05 — well over a year old, evergreen/stale listing.
+- N26, Junior Analytics Engineer (Berlin) — posted 2025-11-25 — stale.
+- adsquare, Staff Data Analytics Engineer (Berlin) — posted 2026-05-11 (~5 months old) — stale. A second adsquare req, "Data Analytics Engineer" (job 2668641), and a "Senior Data Analytics Engineer — Fully Remote" (Amsterdam-based) req had no confirmable posted date — excluded as unverifiable.
+- Trade Republic, Analytics Engineer - Risk Management Tech (Berlin) — confirmed across startup.jobs and Welcome to the Jungle as no longer accepting applications — expired (consistent with prior run's pending-confirmation flag).
+- SumUp, Senior Analytics Engineer — Risk Analytics (Berlin) — no posted-date metadata found on SumUp's own careers page or any aggregator — excluded as unverifiable fresh posting (SumUp's careers page recycles reqs frequently, similar to the already-excluded Run & Grow req).
+- nebenan.de — no distinct "Analytics Engineer" req could be confirmed; only an unrelated Senior Conversion Design Analyst role found.
+- HUMANOO (Berlin) — no "Analytics Engineer" req actually exists on their current careers page despite appearing in a generic search snippet.
+- Qonto, Analytics Engineer (Paris/Barcelona/Belgrade/Berlin/Milan remote) — posted ~39 days ago — outside freshness window.
+- Zefir, Staff Analytics Engineer (Paris/remote) — posted ~44 days ago — outside freshness window (also previously excluded).
+- RemoteOK and We Work Remotely "analytics engineer" listings (dbt Labs, Redpanda, Teachable, Top Hat, Hightouch, Fullscript, Mercor, Clearcover, Toggl, Coinbase, Tailscale) — all US/other-region-restricted or already excluded in prior runs as region-ineligible or stale.
+
 ## 2026-10-04
 
 **Environment note:** Same as every prior run (day 10) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (arbeitnow.com, job-boards.eu.greenhouse.io) returned `EGRESS_BLOCKED` again. Liveness/eligibility below is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page. Recommend a manual click-through before applying.
