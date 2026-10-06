@@ -250,10 +250,10 @@ footer{
     <p>Daily-updated matches for an EU citizen based in Germany: fully remote (worldwide/EU/EMEA), onsite in Berlin, or hybrid anywhere in Germany.</p>
     <div class="stats">
       <div class="stat"><div class="n" id="stat-new">0</div><div class="l">New today</div></div>
-      <div class="stat"><div class="n" id="stat-total">39</div><div class="l">Total tracked</div></div>
-      <div class="stat"><div class="n">2026-10-05</div><div class="l">Last updated</div></div>
+      <div class="stat"><div class="n" id="stat-total">40</div><div class="l">Total tracked</div></div>
+      <div class="stat"><div class="n">2026-10-06</div><div class="l">Last updated</div></div>
     </div>
-    <div class="note"><strong>Note:</strong> as with every prior run (day 11), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
+    <div class="note"><strong>Note:</strong> as with every prior run (day 12), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
   </div>
 
   <div class="filters" role="group" aria-label="Filter by work mode">
@@ -264,7 +264,7 @@ footer{
   </div>
 
   <section class="group">
-    <h2>New today <span class="count">— 2026-10-05</span></h2>
+    <h2>New today <span class="count">— 2026-10-06</span></h2>
     <div class="cards" id="new-today"></div>
   </section>
 
@@ -716,10 +716,21 @@ const JOBS = [
     flag:"Listing explicitly names Germany as an eligible country (confirmed across Greenhouse/Remote Woman, Welcome to the Jungle, and WeAreDevelopers listings). No visa sponsorship offered — fine for an EU citizen already in Germany.",
     url:"https://job-boards.greenhouse.io/remotewoman/jobs/8659416002",
     date:"2026-10-04"
+  },
+  {
+    title:"Senior Analytics Engineer - Marketing",
+    company:"Whow Games GmbH",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Hamburg (2 days/week office)",
+    posted:"~22 hours ago",
+    salary:"€75,000–€90,000/yr",
+    flag:"Mobile games company; single point of contact between Data and Marketing, turning signals into budget/channel/LTV decisions (MMM/MTA). Very fresh posting.",
+    url:"https://www.arbeitnow.com/jobs/companies/whow-games-gmbh/senior-analytics-engineer-marketing-hamburg-385823",
+    date:"2026-10-06"
   }
 ];
 
-const TODAY = "2026-10-05";
+const TODAY = "2026-10-06";
 const newToday = JOBS.filter(j=>j.date===TODAY);
 const byDate = {};
 JOBS.forEach(j=>{ (byDate[j.date] = byDate[j.date] || []).push(j); });

@@ -1,5 +1,32 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-10-06
+
+**Environment note:** Same as every prior run (day 12) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (remoteok.com, jobs.ashbyhq.com, www.arbeitnow.com, www.remoterocketship.com) returned `EGRESS_BLOCKED` again. Liveness/eligibility is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
+
+### Hybrid-Germany
+
+- **Senior Analytics Engineer - Marketing** — Whow Games GmbH — Hybrid-Hamburg (2 days/week in office) — Posted: ~22 hours ago (Arbeitnow) — Salary: €75,000–€90,000/yr — [Apply](https://www.arbeitnow.com/jobs/companies/whow-games-gmbh/senior-analytics-engineer-marketing-hamburg-385823)
+  - Mobile games company (Hamburg); sole point of contact between Data and Marketing, turning signals into budget/channel/LTV decisions (MMM/MTA, incrementality testing). dbt + Tableau/BI stack. Very fresh posting, cross-verified via Arbeitnow's own "posted 22 hours ago" badge.
+
+### Investigated and excluded this run
+
+- Statista, Analytics Engineer - Healthcare / Reporting Platform (Hamburg/Berlin, hybrid, via Ashby) — both resurfaced in search but confirmed stale: Healthcare req posted ~April 18 2026 (~6 months old); Reporting Platform req confirmed by Built In as "removed on Thursday, April 23, 2026" — same stale listing already excluded in a prior run, just resurfacing under a new Ashby ID.
+- Enpal, Senior Analytics Engineer - Enpal Energy (Berlin, hybrid, €75-95k) — posted Aug 6, 2026 (~2 months old) — outside freshness window.
+- Scalable Capital, Senior Analytics Engineer (Berlin) — same requisition already tracked (smartrecruiters 744000123721360), just resurfaced via Welcome to the Jungle/Ashby-style mirrors.
+- Oviva, Senior Analytics Engineer (Germany, remote) — posted ~146 days ago — stale.
+- Deel, Senior Analytics Engineer - People Analytics (remote Europe/UK) — confirmed "Job no longer available" — expired. Distinct from the already-tracked Deel Analytics Engineer (Marketing) req.
+- Lime (scooters), Senior Analytics Engineer (remote) — requires Portugal residency specifically, not Germany-eligible despite "remote EU" framing — region-ineligible.
+- Personio, (Senior) Analytics Engineer (d/f/m) (Berlin hybrid, mirrored across builtin IDs 3560064 and 4573173, and jobs.accel.com) — posted ~14 days ago, at the edge of the freshness window; appears to be the same role as Personio's already-tracked Senior Analytics Engineer (d/f/m) req, just recycled/mirrored across additional job-board scrapers — excluded as a likely duplicate rather than a genuinely new requisition.
+- freenet, Analytics Engineer (w/m/d) - Data Analytics (Hamburg) — posted Aug 12, 2026 (~2 months old) — outside freshness window.
+- Intercom, Senior Analytics Engineer (Berlin) — posted April 21, 2026 (~5.5 months old) — stale.
+- idealista, Analytics Engineer (remote EU, Madrid-based company) — posted Sept 15, 2026 (~3 weeks old) — outside freshness window.
+- Dashlane, Analytics Engineer (Lisbon) — hybrid Lisbon, Portugal — excluded as hybrid outside Germany.
+- Octopus Energy, Analytics Engineer (m/w/d) (Berlin) — posted ~21 days ago — outside freshness window.
+- Studyflix GmbH, Junior Data Analyst / Analytics Engineer (Augsburg) — onsite outside Berlin, work mode not confirmed hybrid/remote — excluded.
+- Grafana Labs, People Analytics Analyst; GALVANY, Senior Data Engineer — title mismatch (not an Analytics Engineer role) — excluded.
+- RemoteOK "analytics engineer"/"data analyst" listings (Zenjob, Diamond Foundry, Atlassian, Lynx Analytics) and We Work Remotely listings (Tailscale, LawnStarter) — all region-restricted (US/worldwide-not-EU-specific) or already excluded in prior runs.
+
 ## 2026-10-05
 
 **Environment note:** Same as every prior run (day 11) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (remoteok.com, expatrio.jobs.personio.de, eraneos.jobs.personio.de, www.sumup.com) returned `EGRESS_BLOCKED` again. Liveness/eligibility is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
