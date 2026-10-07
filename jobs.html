@@ -249,11 +249,11 @@ footer{
     <h1>Analytics Engineer Job Tracker</h1>
     <p>Daily-updated matches for an EU citizen based in Germany: fully remote (worldwide/EU/EMEA), onsite in Berlin, or hybrid anywhere in Germany.</p>
     <div class="stats">
-      <div class="stat"><div class="n" id="stat-new">0</div><div class="l">New today</div></div>
-      <div class="stat"><div class="n" id="stat-total">40</div><div class="l">Total tracked</div></div>
-      <div class="stat"><div class="n">2026-10-06</div><div class="l">Last updated</div></div>
+      <div class="stat"><div class="n" id="stat-new">5</div><div class="l">New today</div></div>
+      <div class="stat"><div class="n" id="stat-total">45</div><div class="l">Total tracked</div></div>
+      <div class="stat"><div class="n">2026-10-07</div><div class="l">Last updated</div></div>
     </div>
-    <div class="note"><strong>Note:</strong> as with every prior run (day 12), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
+    <div class="note"><strong>Note:</strong> as with every prior run (day 13), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
   </div>
 
   <div class="filters" role="group" aria-label="Filter by work mode">
@@ -264,7 +264,7 @@ footer{
   </div>
 
   <section class="group">
-    <h2>New today <span class="count">— 2026-10-06</span></h2>
+    <h2>New today <span class="count">— 2026-10-07</span></h2>
     <div class="cards" id="new-today"></div>
   </section>
 
@@ -727,10 +727,68 @@ const JOBS = [
     flag:"Mobile games company; single point of contact between Data and Marketing, turning signals into budget/channel/LTV decisions (MMM/MTA). Very fresh posting.",
     url:"https://www.arbeitnow.com/jobs/companies/whow-games-gmbh/senior-analytics-engineer-marketing-hamburg-385823",
     date:"2026-10-06"
+  },
+  {
+    title:"Analytics Engineer, Product",
+    company:"Deel",
+    mode:"remote",
+    modeLabel:"Remote · Germany, UK, Portugal, Canada, Spain, Italy, Estonia, Brazil, Argentina",
+    posted:"~2-6 days ago (per multiple mirror sites)",
+    salary:"$100,000–$180,000 (per mirror listing)",
+    flag:"Distinct requisition from the already-tracked Deel Analytics Engineer (Marketing) role. Germany is explicitly named among the eligible hiring countries.",
+    url:"https://jobs.generalcatalyst.com/companies/deel-2/jobs/46090258-analytics-engineer-product",
+    date:"2026-10-07"
+  },
+  {
+    title:"Analytics Engineer (w/m/d)",
+    company:"StackFuel GmbH",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Berlin (3 days/week office)",
+    posted:"~2 days ago",
+    salary:"not disclosed",
+    flag:"Builds/maintains dbt models and pipelines for the company's data platform. Also offers up to 10 workation days/year anywhere in the EU/EEA/Turkey. Very fresh posting.",
+    url:"https://www.arbeitnow.com/jobs/companies/stackfuel/analytics-engineer-berlin-382440",
+    date:"2026-10-07"
+  },
+  {
+    title:"Analytics Engineer – Marketing & Growth",
+    company:"PERGOLUX",
+    mode:"onsite",
+    modeLabel:"Onsite-Berlin",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Third distinct PERGOLUX Analytics Engineer req tracked (alongside the already-tracked Founding AE and Finance & Operations AE roles). Known from mirror sites in prior runs but lacked a confirmable direct link until this run's Arbeitnow listing. No posted-date metadata found — verify freshness manually.",
+    warn:true,
+    url:"https://www.arbeitnow.com/jobs/companies/pergolux/analytics-engineer-marketing-growth-berlin-222553",
+    date:"2026-10-07"
+  },
+  {
+    title:"Staff Analytics Engineer – AI-Powered Analytics",
+    company:"emnify",
+    mode:"remote",
+    modeLabel:"Remote · EU (Berlin preferred; monthly in-person workshops)",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"New company in our tracking. Cross-verified across startup.jobs, Arbeitnow, Built In and StudySmarter mirrors as a currently active, distinct listing (semantic layer / text-to-SQL focus), but no explicit posted-date signal found this run — verify freshness manually.",
+    warn:true,
+    url:"https://startup.jobs/staff-analytics-engineer-ai-powered-analytics-emnify-8744303",
+    date:"2026-10-07"
+  },
+  {
+    title:"Analytics Engineer (m/w/d)",
+    company:"Forte Digital",
+    mode:"onsite",
+    modeLabel:"Onsite-Berlin",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Digital agency; builds GA4/marketing-data ETL pipelines and dashboards. Listed directly on the company's own careers page. No posted-date metadata found — verify freshness manually.",
+    warn:true,
+    url:"https://fortedigital.com/de/jobs/analytics-engineer-m-w-d",
+    date:"2026-10-07"
   }
 ];
 
-const TODAY = "2026-10-06";
+const TODAY = "2026-10-07";
 const newToday = JOBS.filter(j=>j.date===TODAY);
 const byDate = {};
 JOBS.forEach(j=>{ (byDate[j.date] = byDate[j.date] || []).push(j); });

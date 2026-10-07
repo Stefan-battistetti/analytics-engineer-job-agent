@@ -1,5 +1,45 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-10-07
+
+**Environment note:** Same as every prior run (day 13) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (remoteok.com, www.arbeitnow.com, jobs.ashbyhq.com, jobs.generalcatalyst.com) returned `EGRESS_BLOCKED` again. Liveness/eligibility is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
+
+### Remote
+
+- **Analytics Engineer, Product** — Deel — Remote · Germany, UK, Portugal, Canada, Spain, Italy, Estonia, Brazil, Argentina — Posted: ~2-6 days ago (per multiple mirror "last updated" signals) — Salary: $100,000–$180,000 (per mirror) — [Apply](https://jobs.generalcatalyst.com/companies/deel-2/jobs/46090258-analytics-engineer-product)
+  - Distinct requisition from the already-tracked Deel Analytics Engineer (Marketing) role. Germany is explicitly named among the eligible hiring countries for this req.
+- **Staff Analytics Engineer – AI-Powered Analytics** — emnify — Remote · EU, Berlin preferred (monthly in-person workshops) — Posted: unknown — Salary: not disclosed — [Apply](https://startup.jobs/staff-analytics-engineer-ai-powered-analytics-emnify-8744303)
+  - New company in our tracking; builds a governed semantic layer + text-to-SQL/RAG analytics tooling on a StarRocks/dbt/Superset stack. Cross-verified as a currently live, distinct listing across startup.jobs, Arbeitnow, Built In, and StudySmarter, but no explicit posted-date signal found despite multiple attempts — verify freshness manually before applying.
+
+### Hybrid-Germany
+
+- **Analytics Engineer (w/m/d)** — StackFuel GmbH — Hybrid-Berlin (3 days/week office; up to 10 workation days/yr anywhere in EU/EEA/Turkey) — Posted: ~2 days ago (Arbeitnow) — Salary: not disclosed — [Apply](https://www.arbeitnow.com/jobs/companies/stackfuel/analytics-engineer-berlin-382440)
+  - Builds/maintains dbt models and pipelines for the company's analytics/data-science platform. Very fresh, cross-verified posting.
+
+### Onsite-Berlin
+
+- **Analytics Engineer – Marketing & Growth** — PERGOLUX — Onsite-Berlin — Posted: unknown — Salary: not disclosed — [Apply](https://www.arbeitnow.com/jobs/companies/pergolux/analytics-engineer-marketing-growth-berlin-222553)
+  - Third distinct PERGOLUX Analytics Engineer req now tracked (alongside the already-tracked Founding AE and Finance & Operations AE roles). Mirror sites (freehire, zapply) referenced this role in earlier runs but no confirmable direct link was found until this run's Arbeitnow listing. No posted-date metadata found — verify freshness manually.
+- **Analytics Engineer (m/w/d)** — Forte Digital — Onsite-Berlin — Posted: unknown — Salary: not disclosed — [Apply](https://fortedigital.com/de/jobs/analytics-engineer-m-w-d)
+  - Digital agency; builds GA4/marketing-data ETL pipelines, data marts, and dashboards (Tableau/Looker/Metabase). Listed directly on the company's own careers page. No posted-date metadata found — verify freshness manually.
+
+### Investigated and excluded this run
+
+- Taxfix, (Senior) Analytics Engineer - Marketing (Berlin, hybrid) — confirmed "no longer accepting applications" across multiple sources — expired.
+- Jobgether, Analytics Engineer - OpenData (Germany remote) — healthcare/life-sciences data description matches the already-tracked Veeva OpenData req; Jobgether mirrors/brokers other companies' listings — duplicate, not a distinct requisition.
+- BlueThrone, Analytics Engineer (Wrocław, Poland / Lisbon, Portugal) — posted 2026-03-04 (~7 months old) — stale, and both locations are outside Germany/EU-wide-remote scope (onsite Poland/Portugal) regardless.
+- DeepL, Senior Analytics Engineer (London/Munich/Berlin/Amsterdam/Cologne) — last published January 12, 2026 (~9 months old) — stale.
+- Pflegewegweiser GmbH (Entyre Group), (Senior) Marketing Analytics Engineer (Berlin, hybrid) — same Entyre Group role family and boilerplate as the already-excluded Entyre Senior Marketing Analytics Engineer (previously confirmed stale, ~183 days old); recycled across group entities — excluded as stale/duplicate.
+- Biztory, Analytics Engineer | DACH (Düsseldorf/Cologne/Berlin, hybrid) — confirmed "reposted 24 days ago" — outside the ~14-day freshness window.
+- Trusted Shops SE, Principal Analytics Engineer (f/m/d) (Cologne hybrid or Berlin remote) — same requisition already excluded in a prior run (posted June 30, last updated Sept 1, now ~5+ weeks old) — still stale, resurfaced under new Arbeitnow scrape IDs.
+- MANIKO Nails GmbH, Senior Analytics Engineer (remote/Berlin) — same recycled boilerplate listing already excluded in a prior run (~5+ months old, mirrored identically across many postings) — resurfaced under new Arbeitnow scrape IDs; still stale.
+- ABOUT YOU SE & Co. KG, (Senior) Analytics Engineer — "Customer & Shop Intelligence Circle Cluster" (Germany, remote) — confirmed posted ~1 month ago on Remotive — outside the ~14-day freshness window; also distinct from the three already-tracked ABOUT YOU reqs (Shop Analytics, Web Tracking/Storefront, Supply Data Solutions).
+- Enpal, Analytics Engineer _ Decision Logic/Rules (Metrify Smart Metering) (Berlin, hybrid) — resurfaces across many scraper IDs going back months with no confirmable fresh posted date — treated as a long-recycled evergreen listing, excluded as unverifiable/likely stale, consistent with how similarly-recycled listings (MANIKO, SumUp) were handled in prior runs.
+- 1KOMMA5°, (Senior) Analytics Engineer (Berlin, remote) — same requisition already tracked (personio 2622556), resurfaced via a new Arbeitnow scrape ID with a "posted 3 days ago" badge — duplicate, not a new requisition.
+- Statista, Analytics Engineer (Hamburg or Berlin) — same requisition already investigated and excluded as stale in a prior run — resurfaced again under the same Arbeitnow ID.
+- Eraneos, (Senior) Analytics Engineer (remote, all genders) — same requisition already excluded in a prior run (confirmed posted ~7 months old, requires German B1) — resurfaced under new Arbeitnow scrape IDs.
+- Many large Berlin/Germany employers already tracked (Deel, PERGOLUX, ABOUT YOU, Veeva, Delivery Hero, etc.) resurfaced with the same reqs already in memory — only genuinely new requisitions are listed above.
+
 ## 2026-10-06
 
 **Environment note:** Same as every prior run (day 12) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (remoteok.com, jobs.ashbyhq.com, www.arbeitnow.com, www.remoterocketship.com) returned `EGRESS_BLOCKED` again. Liveness/eligibility is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
