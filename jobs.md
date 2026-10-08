@@ -1,5 +1,28 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-10-08
+
+**Environment note:** Same as every prior run (day 14) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (www.arbeitnow.com) returned `EGRESS_BLOCKED` again. Liveness/eligibility is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
+
+### Hybrid-Germany
+
+- **Staff Data Analytics Engineer (m/f/d)** — adsquare GmbH — Hybrid-Berlin (partial home-office) — Posted: unknown — Salary: €90,000–€100,000/yr — [Apply](https://adsquare.jobs.personio.de/job/2540423)
+  - Distinct requisition from the already-tracked adsquare Senior Data Analytics Engineer req (personio 2049611) — this is the Staff/IC technical-track role (7+ yrs experience, architectural/standards ownership, no people management). Cross-verified as live and distinct via adsquare's own Personio page, StepStone, and Seedtable. No posted-date signal found — verify freshness manually before applying.
+
+### Investigated and excluded this run
+
+- Cosuno, Senior Analytics Engineer (Berlin, hybrid/remote conflicting) — confirmed ~4 weeks old across Dailyremote/Remotely.de — outside the ~14-day freshness window.
+- Almedia, Analytics Engineer (Berlin) — ZipRecruiter reposts dated May–Aug 2026 — stale.
+- FREENOW, Analytics Engineer (Data Mesh, Berlin/Hamburg/Barcelona) — multiple Greenhouse req IDs resurfacing over a long period with no confirmable recent post date and conflicting location lists — unverifiable/likely long-recycled evergreen listing.
+- Ninox Software, Junior Analytics Engineer (Berlin) — Techstars copy explicitly "no longer accepting applications"; other copies conflict on hybrid vs. remote and show no reliable recent date — expired/stale.
+- Biztory, Analytics Engineer | DACH — same requisition already excluded in the 2026-10-07 run (confirmed "reposted 24 days ago") — still outside freshness window.
+- Lightdash / Jobgether, "Analytics Engineering Advocate" (Germany/France/Spain, remote) — Lightdash's own post date is 2026-06-15 (~4 months old); Jobgether/legalalphabet mirror the same role as a broker — stale and not a distinct new requisition.
+- Infinite Lambda, "EU I Analytics Engineer" (Built In) — stated start date February 2026 — stale.
+- Emagine / Team Up / Datumo (Poland-based remote roles, justjoin.it) — onsite/contract basis tied to Poland, not EU-wide or Germany-eligible remote — excluded on scope.
+- Studyflix, "Junior Data Analyst / Analytics Engineer" — Berlin listed as one of ten possible office cities (Augsburg appears to be the primary location on other mirrors); combined analyst/engineer title and no posted-date signal — excluded as ambiguous location/title fit.
+- Enpal, Analytics Engineer (Berlin, general supply-chain/logistics req) — portal shows "updated 17 September 2026" (~3 weeks old) — outside the ~14-day freshness window.
+- Many large Berlin/Germany employers already tracked (adsquare Senior req, Stackfuel, Gemma Analytics, Taikonauten, 1KOMMA5°, emnify, Enpal Decision-Logic req, Maniko, Eraneos, ABOUT YOU, Jobgether OpenData, Trusted Shops, etc.) resurfaced with the same reqs already in memory or already excluded in prior runs — only the genuinely new requisition above is listed.
+
 ## 2026-10-07
 
 **Environment note:** Same as every prior run (day 13) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (remoteok.com, www.arbeitnow.com, jobs.ashbyhq.com, jobs.generalcatalyst.com) returned `EGRESS_BLOCKED` again. Liveness/eligibility is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
