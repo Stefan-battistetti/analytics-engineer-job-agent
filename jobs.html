@@ -249,11 +249,11 @@ footer{
     <h1>Analytics Engineer Job Tracker</h1>
     <p>Daily-updated matches for an EU citizen based in Germany: fully remote (worldwide/EU/EMEA), onsite in Berlin, or hybrid anywhere in Germany.</p>
     <div class="stats">
-      <div class="stat"><div class="n" id="stat-new">1</div><div class="l">New today</div></div>
-      <div class="stat"><div class="n" id="stat-total">46</div><div class="l">Total tracked</div></div>
-      <div class="stat"><div class="n">2026-10-08</div><div class="l">Last updated</div></div>
+      <div class="stat"><div class="n" id="stat-new">2</div><div class="l">New today</div></div>
+      <div class="stat"><div class="n" id="stat-total">48</div><div class="l">Total tracked</div></div>
+      <div class="stat"><div class="n">2026-10-09</div><div class="l">Last updated</div></div>
     </div>
-    <div class="note"><strong>Note:</strong> as with every prior run (day 14), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
+    <div class="note"><strong>Note:</strong> as with every prior run (day 15), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
   </div>
 
   <div class="filters" role="group" aria-label="Filter by work mode">
@@ -264,7 +264,7 @@ footer{
   </div>
 
   <section class="group">
-    <h2>New today <span class="count">— 2026-10-08</span></h2>
+    <h2>New today <span class="count">— 2026-10-09</span></h2>
     <div class="cards" id="new-today"></div>
   </section>
 
@@ -797,10 +797,34 @@ const JOBS = [
     warn:true,
     url:"https://adsquare.jobs.personio.de/job/2540423",
     date:"2026-10-08"
+  },
+  {
+    title:"Data Analytics Engineer (m/f/d)",
+    company:"adsquare GmbH",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Berlin",
+    posted:"unknown",
+    salary:"€60,000–€75,000/yr gross",
+    flag:"Third distinct adsquare requisition now tracked (alongside the Senior and Staff Data Analytics Engineer reqs). This is the plain/experienced-level IC role — explicitly not a Data Analyst role per the posting. Cross-verified as live and distinct via adsquare's own Personio page, devjobs.de (\"Neu\") and eFinancialCareers. No posted-date signal found — verify freshness manually before applying.",
+    warn:true,
+    url:"https://adsquare.jobs.personio.de/job/2668641",
+    date:"2026-10-09"
+  },
+  {
+    title:"Senior Data Analytics Engineer",
+    company:"Digistore24",
+    mode:"remote",
+    modeLabel:"Remote · Germany (Berlin/Hamburg/Munich/Mainz/Frankfurt) + EU (Stockholm/Warsaw) + Belgrade",
+    posted:"unknown",
+    salary:"€50,000–€65,000/yr gross",
+    flag:"100% remote with an explicit list of eligible cities including several in Germany. English-only role. Cross-verified across the company's own careers page, devjobs.de and join.com. No posted-date signal found — verify freshness manually before applying.",
+    warn:true,
+    url:"https://jobs.digistore24.com/o/senior-data-analytics-engineer",
+    date:"2026-10-09"
   }
 ];
 
-const TODAY = "2026-10-08";
+const TODAY = "2026-10-09";
 const newToday = JOBS.filter(j=>j.date===TODAY);
 const byDate = {};
 JOBS.forEach(j=>{ (byDate[j.date] = byDate[j.date] || []).push(j); });

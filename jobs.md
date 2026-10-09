@@ -1,5 +1,30 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-10-09
+
+**Environment note:** Same as every prior run (day 15) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (www.arbeitnow.com, adsquare.jobs.personio.de) returned `EGRESS_BLOCKED` again. Liveness/eligibility is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
+
+### Hybrid-Germany
+
+- **Data Analytics Engineer (m/f/d)** — adsquare GmbH — Hybrid-Berlin — Posted: unknown — Salary: €60,000–€75,000/yr gross — [Apply](https://adsquare.jobs.personio.de/job/2668641)
+  - Third distinct adsquare requisition now tracked (alongside the already-tracked Senior req, personio 2049611, and Staff req, personio 2540423). This is the plain/experienced-level IC role; the posting explicitly says it is "not a Data Analyst role" — centers on Python/SQL/dbt pipeline work on a cloud warehouse (Snowflake/Redshift/BigQuery). Cross-verified as live and distinct via adsquare's own Personio page, devjobs.de (marked "Neu") and eFinancialCareers. No posted-date signal found — verify freshness manually before applying.
+
+### Remote
+
+- **Senior Data Analytics Engineer** — Digistore24 — Remote (100%) · eligible cities include Berlin, Hamburg, Munich, Mainz, Frankfurt (Germany) plus Stockholm, Warsaw (EU) and Belgrade — Posted: unknown — Salary: €50,000–€65,000/yr gross — [Apply](https://jobs.digistore24.com/o/senior-data-analytics-engineer)
+  - Genuinely EU/Germany-eligible fully remote role (English-only, no German required); covers data strategy/architecture/cost-monitoring on an Azure/BigQuery/AWS/GCP stack. Cross-verified across the company's own careers page, devjobs.de, and join.com. No posted-date signal found — verify freshness manually before applying.
+
+### Investigated and excluded this run
+
+- Taikonauten GmbH & Co. KG, "Data Analytics Engineer (Mensch)" (StepStone, Berlin) — description (web analytics implementation, dashboards/reports, SEO, data processes) is near-identical to the already-tracked Taikonauten "Web Analytics Engineer (Mensch)" req (join.com 13307980) — treated as the same requisition mirrored under a different title/board, not a new one.
+- JustPlay GmbH, Analytics Engineer (all genders) (Berlin) — ZipRecruiter reposts dated May 15 and June 14, 2026 — ~4+ months old, outside the ~14-day freshness window.
+- Jobgether, Analytics Engineer – OpenData (Germany, remote) — healthcare/life-sciences data description matches the already-tracked Veeva OpenData req (confirmed duplicate in a prior run too) — not a distinct requisition.
+- Jobgether, Analytics Engineering Advocate (Germany, remote) — same requisition already excluded in the 2026-10-08 run (posted 2026-06-15, ~4 months old) — still stale.
+- SimplyVision GmbH, "Mid Analytics Engineer" (remote, justjoin.it) — could not confirm this listing exists via any source this run (company appears to be a Swiss IT freelancer cooperative with no confirmable analytics engineer posting) — excluded as unverifiable.
+- Emagine (Poland-based client, justjoin.it) — B2B contract tied to a Poland-based engagement, not Germany/EU-wide-remote in the way this tracker scopes it — excluded on scope, consistent with a prior run's exclusion of other Poland-tied Emagine/Team Up/Datumo listings.
+- Hoffmann Group, Senior Analytics Engineer (Munich, hybrid) — posted ~59 days ago — outside the ~14-day freshness window.
+- Many large Berlin/Germany employers already tracked (adsquare's other two reqs, Gemma Analytics, Eraneos, Enpal, ABOUT YOU, N26, Stackfuel, PERGOLUX, emnify, etc.) resurfaced with the same reqs already in memory or already excluded in prior runs — only the two genuinely new requisitions above are listed.
+
 ## 2026-10-08
 
 **Environment note:** Same as every prior run (day 14) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (www.arbeitnow.com) returned `EGRESS_BLOCKED` again. Liveness/eligibility is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
