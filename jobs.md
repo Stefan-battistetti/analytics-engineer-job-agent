@@ -1,5 +1,23 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-10-10
+
+**Environment note:** Same as every prior run (day 16) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (www.arbeitnow.com) returned `ENOTFOUND`/`EGRESS_BLOCKED` again. Liveness/eligibility is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
+
+### Hybrid-Germany
+
+- **Analytics Engineer (m/f/d)** — Raisin — Hybrid-Germany · Berlin (Kreuzberg HQ), also Frankfurt/Hamburg/Munich — Posted: unknown — Salary: not disclosed — [Apply](https://raisin.jobs.personio.de/job/1975387)
+  - Fintech savings/investment marketplace backed by DWS/Deutsche Bank. Core Product Data Insights team building dbt/Airflow/Snowflake models feeding a Looker semantic layer. Flexible hours + home-office at any of the four listed German offices. Cross-verified as live and consistent across Raisin's own Personio page and its Arbeitnow mirror. No posted-date signal found — verify freshness manually before applying.
+
+### Investigated and excluded this run
+
+- ICE (International Copyright Enterprise Services), Senior Analytics Engineer (m/f/d) (Berlin) — ZipRecruiter mirrors show creation dates of 13 May 2026 and 12 June 2026 — ~4-5 months old, outside the ~14-day freshness window.
+- vengine GmbH (via Instaffo), Analytics Engineer (m/w/d) (Hamburg, €55,000–€75,000) — could not confirm hybrid/remote arrangement; listing reads as Hamburg-onsite, which doesn't meet any of the three eligible categories (not Berlin, not confirmed hybrid) — excluded as ambiguous/scope.
+- justDice GmbH (Applike Group), Analytics Engineer (Hamburg, hybrid confirmed) — remotely.de shows this exact listing ("applike-group-analytics-engineer") posted "vor 2 Monaten" (~2 months ago) — outside the ~14-day freshness window.
+- Currencies Direct, Senior Analytics Engineer (Spain – Remote, Greenhouse EU board) — location tag reads "Spain - Remote," consistent with other EU-country-restricted postings on this board (e.g. their UK-London req) — treated as Spain-residency-restricted, not Germany/EU-wide-remote, and excluded on scope.
+- Nigel Frank, Senior Analytics Engineer – Fully Remote – Snowflake – Looker (contract, "anywhere in Europe") — posting reference code decodes to 26 Jan 2024 — ~2 years old, stale.
+- Many large Berlin/Germany employers already tracked (adsquare's three reqs, 1KOMMA5°, Stackfuel, Gemma Analytics, Pergolux, Enpal, Maniko, Trusted Shops, Almedia, Cosuno, Statista, ABOUT YOU, Veeva, Taikonauten, Digistore24, Bikeleasing, emnify, etc.) resurfaced with the same reqs already in memory or already excluded in prior runs — only the one genuinely new requisition above is listed. Several Poland-tied Emagine/JustJoin.it B2B contracts and the already-excluded Jobgether/Lightdash "Analytics Engineering Advocate" mirrors also resurfaced — consistent with prior exclusions on scope/staleness.
+
 ## 2026-10-09
 
 **Environment note:** Same as every prior run (day 15) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (www.arbeitnow.com, adsquare.jobs.personio.de) returned `EGRESS_BLOCKED` again. Liveness/eligibility is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
