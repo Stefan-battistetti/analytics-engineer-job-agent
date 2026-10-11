@@ -1,5 +1,28 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-10-11
+
+**Environment note:** Same as every prior run (day 17) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (www.arbeitnow.com, job-boards.greenhouse.io, natsana.jobs.personio.de) returned `ENOTFOUND`/`EGRESS_BLOCKED` again. Liveness/eligibility is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
+
+### Remote
+
+- **AI-First Analytics Engineer (m/f/d)** — Sport Alliance GmbH — Remote · Germany only — Posted: unknown — Salary: €72,000–€82,000/yr — [Apply](https://arbeitnow.com/jobs/companies/sport-alliance-gmbh/remote-ai-first-analytics-engineer-131383)
+  - 100% mobile work within Germany only (Deutschland-Ticket subsidy, company pension scheme). Owns the modelling layer powering analytics/operations/AI; asks for C1 German + English and experience with financial/payments/regulated reporting data. Cross-verified across Arbeitnow, Working Nomads, and a Jobgether mirror (all show Germany-only remote, consistent salary band). No posted-date signal found — verify freshness manually before applying.
+
+### Investigated and excluded this run
+
+- plusYou GmbH, (Senior) Data/Analytics Engineer (m/w/d) (Hamburg) — recruitment-agency-placed listing (Arbeitsagentur + Coveto/StudySmarter mirrors); could not confirm hybrid/remote arrangement or a posted date — excluded as ambiguous work-mode (not Berlin-onsite, not confirmed hybrid, not remote).
+- Natsana GmbH (gloryfeel x natsana), (Senior) Analytics Engineer (w/m/d) (Remote Germany/Düsseldorf) — same recurring listing already excluded twice before (2026-04-03 original post per Remotive archive; "~1 month ago" in a later run) — treated as the same stale/evergreen requisition, still outside the freshness window.
+- FREENOW, Analytics Engineer (Hamburg/Berlin/Barcelona) — same unverifiable/long-recycled evergreen Greenhouse listing already excluded in a prior run.
+- Biztory, Analytics Engineer | DACH (Düsseldorf/Cologne/Berlin, hybrid) — same requisition already excluded (confirmed "reposted 24 days ago") — still outside the ~14-day freshness window.
+- Jobandtalent (via Atomico careers), "HQ - Analytics Engineer (EMEA Remote)" (Madrid) — explicitly requires a valid Spain work permit — Spain-residency-restricted, not Germany/EU-wide-remote — excluded on scope, consistent with prior exclusions of other country-restricted "EMEA remote" listings.
+- Finom, Senior Analytics Engineer (remote) — every current listing names Spain/Cyprus/Poland/Serbia/Slovenia as eligible countries; no listing found naming Germany — excluded on scope.
+- Purpose Green, Senior Engineer Data, AI & Analytics (m/w/d) (Berlin-Charlottenburg, hybrid) — broader title than "Analytics Engineer", requires C1 German, and the only dated mirror (jobexport.de) shows 25 Nov 2025 — ~11 months old, stale.
+- Glow25 (by Primal State Performance GmbH), (Junior/Senior) Analytics Engineer (Rottendorf, Bavaria) — onsite/hybrid in Rottendorf, not Berlin and not clearly Germany-wide hybrid; closest dated mirror (Remotive) shows 31 Mar 2025 — stale and location doesn't clearly meet scope.
+- Upsun (formerly Platform.sh), Senior Analytics Engineer (Remote FR/DE/ES/UK) — already tracked; one mirror (Tarve) shows an apply-by date of 7 Oct 2026 that has now passed — may be expired, flagging for the user to re-verify rather than re-adding.
+- Simon-Kucher — no actual "Analytics Engineer" posting found under this title/company combination; the closest matches were a Data Engineer internship and a Data Scientist role — excluded as not a genuine match.
+- Many large Berlin/Germany employers already tracked (adsquare's three reqs, 1KOMMA5°, About You's several reqs/SCAYLE Storefront Core variants, Gemma Analytics, Stackfuel, N26, emnify, Cosuno, Almedia, Statista, Raisin, Digistore24, Veeva, Taikonauten, Eraneos, Maniko, etc.) resurfaced with the same reqs already in memory or already excluded in prior runs — only the one genuinely new requisition above is listed.
+
 ## 2026-10-10
 
 **Environment note:** Same as every prior run (day 16) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (www.arbeitnow.com) returned `ENOTFOUND`/`EGRESS_BLOCKED` again. Liveness/eligibility is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
