@@ -1,5 +1,29 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-10-12
+
+**Environment note:** Same as every prior run (day 18) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to a job-board domain tested this run (www.arbeitnow.com) returned `ENOTFOUND`/`EGRESS_BLOCKED` again. Liveness/eligibility inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
+
+**No new matches today.** Ran 9 searches across all three eligible categories (remote worldwide/EU/EMEA, onsite-Berlin, hybrid-Germany) plus the required source mix (Arbeitnow, RemoteOK, Wellfound, Himalayas, JustJoin.it, StepStone, Indeed.de, Xing/honeypot.io, LinkedIn, general web). Every candidate surfaced was either already tracked, or excluded below.
+
+### Investigated and excluded this run
+
+- adsquare GmbH, "Data Analytics Engineer (Berlin)" — two arbeitnow.com mirrors (IDs 343221, 498655) resurfaced; a Seedtable copy of the same req is dated 12 Aug 2026 — ~2 months old, outside the ~14-day freshness window, and content matches the already-tracked personio 2668641 req (not a distinct new posting).
+- Statista GmbH, "Analytics Engineer"/"Data Analytics Engineer" (Hamburg or Berlin) — multiple ZipRecruiter mirrors dated 17 Jun, 20 Jul, and 23 Aug 2026 — all 1.5–4 months old, stale.
+- FREENOW, "Analytics Engineer" (Berlin) — same recurring unverifiable/long-recycled evergreen Greenhouse-family listing already excluded in prior runs (2026-10-08, 2026-10-09).
+- Gemma Analytics, "Junior Analytics Engineer" (Berlin) — arbeitnow mirror ID 418831 resurfaced alongside the already-tracked join.com req (14070920) and already-tracked arbeitnow ID 360173 — same role, not a new requisition.
+- 1KOMMA5°, "(Senior) Analytics Engineer" (Berlin) — arbeitnow ID 255697 resurfaced; same company/role already tracked via personio 2622556 — not distinct.
+- Eraneos, "Remote Senior Analytics Engineer" (Germany) — already excluded in a prior run; resurfaced with no new date signal.
+- MANIKO, "Remote Senior Analytics Engineer" (Berlin) — already excluded in a prior run as stale/unconfirmed; resurfaced with no new date signal.
+- Cosuno, "Senior Analytics Engineer" (Berlin) — already excluded (confirmed ~4 weeks old in the 2026-10-08 run) — still stale.
+- Almedia, "Analytics Engineer" (Berlin, two listings) — already excluded (ZipRecruiter reposts dated May–Aug 2026) — still stale.
+- Jobgether, "Analytics Engineering Advocate" (Germany, remote) — same Lightdash-sourced requisition already excluded twice (posted 2026-06-15/2026-07-29) — still outside the freshness window despite an "apply by Oct 28" deadline shown on one mirror.
+- Jobgether, "Analytics Engineer – OpenData" (Germany, remote) — same requisition already matched to the already-tracked Veeva OpenData req in prior runs — not distinct.
+- Infinite Lambda, "EU I Analytics Engineer" (Built In) — already tracked; stated start date Feb 2026 remains stale, no change.
+- Emagine Polska / Team Up / Datumo / Ferchau / Crestt (justjoin.it, Poland) — B2B contracts tied to Poland residency/location, not Germany/EU-wide-remote as scoped — excluded on scope, consistent with prior runs.
+- Digistore24, "Senior Data Analytics Engineer" — already tracked (personio/jobs.digistore24.com req) — no change.
+- Many large Berlin/Germany employers already tracked (adsquare's three personio reqs, Stackfuel, Enpal, Taikonauten, Forte Digital, Bikeleasing, 1KOMMA5°, Veeva, ABOUT YOU, N26, emnify, Raisin, etc.) resurfaced with the same reqs already in memory or already excluded in prior runs — nothing genuinely new found.
+
 ## 2026-10-11
 
 **Environment note:** Same as every prior run (day 17) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to every job-board/company-careers domain tested this run (www.arbeitnow.com, job-boards.greenhouse.io, natsana.jobs.personio.de) returned `ENOTFOUND`/`EGRESS_BLOCKED` again. Liveness/eligibility is inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
