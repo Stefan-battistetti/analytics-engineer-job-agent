@@ -1,5 +1,36 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-10-13
+
+**Environment note:** Same as every prior run (day 19) — this environment's egress proxy denies external hosts by organization policy (confirmed via proxy status: 403 "policy denial" even to google.com and www.arbeitnow.com; only anthropic.com/npm/pypi-family hosts are reachable). WebFetch could not reach any job-board/company-careers domain this run. Liveness/eligibility inferred entirely from WebSearch cross-referencing across sources, not by fetching the live page.
+
+### Hybrid-Germany
+
+- **Analytics Engineer** — InterWorks GmbH — Hybrid-Germany · Düsseldorf — Posted: unknown — Salary: not disclosed — [Apply](https://job-boards.greenhouse.io/interworks/jobs/4566695006)
+  - Analytics consultancy. A second Greenhouse requisition (ID 4569199006) for the same title/company also exists — may be a duplicate posting or a second opening; worth a manual check before assuming two distinct roles.
+- **Analytics Engineer** — N26 — Hybrid-Germany · Berlin (mode not explicitly stated; treated as hybrid consistent with N26's general policy) — Posted: unknown — Salary: not disclosed — [Apply](https://n26.com/en-eu/careers/positions/8068837)
+  - Sourced directly from N26's own official careers site (not a third-party aggregator mirror). N26 has a history in this tracker of aggregator-listed AE roles that turned out stale/removed (Junior AE, generic AE, Senior AEGE role) — this is a distinct, currently-listed req ID on their own site as of this run, but double-check it's genuinely live before applying.
+
+### Investigated and excluded this run
+
+- emnify, Staff Analytics Engineer – AI-Powered Analytics (Remote EU/Berlin) — same requisition already tracked via startup.jobs (8744303); resurfaced today via an arbeitnow.com mirror — not a new req.
+- FUNKE Digital/Mediengruppe, Analytics Engineer (m/w/d) (Berlin/Hamburg, hybrid) — same requisition already tracked via karriere.media; resurfaced today via a devjobs.de mirror — not a new req.
+- ICE (International Copyright Enterprise Services), Senior Analytics Engineer (m/f/d) (Berlin) — same requisition already excluded in the 2026-10-08 run as stale (~4–5 months old per ZipRecruiter mirrors); resurfaced today on Greenhouse's own page marked "New" — the badge doesn't appear to reflect genuine freshness here, treated as the same stale req.
+- Biztory, Analytics Engineer | DACH (Düsseldorf/Cologne/Berlin, hybrid) — same requisition already excluded multiple times (2026-10-07, 2026-10-11 — "reposted 24 days ago") — still the same recurring stale listing.
+- Purpose Green, Senior Engineer Data, AI & Analytics (m/w/d) (Berlin-Charlottenburg, hybrid) — same requisition already excluded (2026-10-11) as stale (~11 months old per jobexport.de) with a broader title than "Analytics Engineer" — no new date signal found.
+- Taikonauten GmbH & Co. KG, Data Analytics Engineer (Mensch) (StepStone, Berlin) — already determined in a prior run to be the same requisition as the already-tracked "Web Analytics Engineer (Mensch)" join.com posting, just mirrored under a different title/board — not a new req.
+- Trusted Shops SE, Principal Analytics Engineer (f/m/d) (Cologne hybrid / Berlin remote) — same requisition already excluded multiple times as stale (resurfaces under new aggregator scrape IDs each run, last confirmed ~31+ days old) — still outside the freshness window.
+- Maniko Nails GmbH, (Senior) Analytics Engineer (Remote/Berlin) — same recycled boilerplate listing already excluded multiple times (~5+ months old) — resurfaced under yet another new arbeitnow scrape ID; still stale.
+- Enpal, Analytics Engineer (Berlin) — aggregator shows "updated 17 Sept 2026" (~26 days old) — outside the ~14-day freshness window.
+- Cosuno, Senior Analytics Engineer (Berlin) — same requisition already excluded (confirmed stale in the 2026-10-08 run) — resurfaced via a new devjobs.de mirror with conflicting work-mode signals; still treated as stale.
+- JustPlay GmbH, Analytics Engineer (Berlin) — ZipRecruiter mirrors dated May/June 2026 — ~4-5 months old, stale.
+- Almedia, Analytics Engineer (Berlin) — same evergreen/recurring listing already excluded (ZipRecruiter reposts dated May–Aug 2026) — still unconfirmed as a genuine fresh opening.
+- Statista GmbH, Data Analytics Engineer (Hamburg or Berlin) — ZipRecruiter mirror dated 23 Aug 2026 — ~7 weeks old, stale, consistent with prior exclusions of Statista listings.
+- Jobgether, Analytics Engineering Advocate (Germany, remote) — same requisition already excluded twice before (posted 2026-06-15/2026-07-29) — still outside the freshness window; also a community/advocate role rather than a hands-on Analytics Engineer build role.
+- SimplyVision GmbH, Mid Analytics Engineer (remote, EU) — freelance/B2B contract via a staffing agency (requires own registered company), not a standard permanent role; no posted date available to assess freshness — excluded on fit/risk grounds, flagged for manual review if the user is open to contract work.
+- Stackfuel (Berlin), Forte Digital (Berlin), and adsquare GmbH Staff Data Analytics Engineer (Berlin, job/2540423) — all already tracked from prior runs, resurfaced via new aggregator mirrors/search results — not new reqs.
+- Also excluded (confirmed closed/stale/region-restricted this run): Eraneos (confirmed closed, "nicht mehr verfügbar seit 04.08.2026"), Flink Senior/non-senior Analytics Engineer (confirmed closed/removed), Hiflylabs (~18 months stale), Jobandtalent HQ Analytics Engineer EMEA Remote (~10 months stale, likely same as already-tracked req), Typeform (US-only, region-restricted), Xcede (expired over a year ago), ABOUT YOU Remotive mirror (~2 years stale, live version already tracked), Primal State Performance (stale), Wellfound/Empirical Path (likely US-only, ambiguous EU eligibility), Remotive/Insight Timer (Philippines/Indonesia-based, region-restricted), N26 Built In mirrors (confirmed removed — live N26 req listed above instead), ICE Business Data Analyst (confirmed removed).
+
 ## 2026-10-12
 
 **Environment note:** Same as every prior run (day 18) — this environment's egress proxy only allows anthropic.com/github.com; WebFetch to a job-board domain tested this run (www.arbeitnow.com) returned `ENOTFOUND`/`EGRESS_BLOCKED` again. Liveness/eligibility inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.

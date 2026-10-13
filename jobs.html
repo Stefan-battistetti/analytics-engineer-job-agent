@@ -249,11 +249,11 @@ footer{
     <h1>Analytics Engineer Job Tracker</h1>
     <p>Daily-updated matches for an EU citizen based in Germany: fully remote (worldwide/EU/EMEA), onsite in Berlin, or hybrid anywhere in Germany.</p>
     <div class="stats">
-      <div class="stat"><div class="n" id="stat-new">0</div><div class="l">New today</div></div>
-      <div class="stat"><div class="n" id="stat-total">50</div><div class="l">Total tracked</div></div>
-      <div class="stat"><div class="n">2026-10-12</div><div class="l">Last updated</div></div>
+      <div class="stat"><div class="n" id="stat-new">2</div><div class="l">New today</div></div>
+      <div class="stat"><div class="n" id="stat-total">52</div><div class="l">Total tracked</div></div>
+      <div class="stat"><div class="n">2026-10-13</div><div class="l">Last updated</div></div>
     </div>
-    <div class="note"><strong>Note:</strong> as with every prior run (day 18), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (only anthropic.com/github.com reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
+    <div class="note"><strong>Note:</strong> as with every prior run (day 19), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (confirmed via proxy status: 403 policy denial even to google.com — only anthropic.com/npm/pypi-family hosts reachable), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
   </div>
 
   <div class="filters" role="group" aria-label="Filter by work mode">
@@ -264,7 +264,7 @@ footer{
   </div>
 
   <section class="group">
-    <h2>New today <span class="count">— 2026-10-12</span></h2>
+    <h2>New today <span class="count">— 2026-10-13</span></h2>
     <div class="cards" id="new-today"></div>
   </section>
 
@@ -845,10 +845,34 @@ const JOBS = [
     warn:true,
     url:"https://arbeitnow.com/jobs/companies/sport-alliance-gmbh/remote-ai-first-analytics-engineer-131383",
     date:"2026-10-11"
+  },
+  {
+    title:"Analytics Engineer",
+    company:"InterWorks GmbH",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Düsseldorf",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"Analytics consultancy. A second Greenhouse requisition (ID 4569199006) for the same title/company also exists — may be a duplicate posting or a second opening; worth a manual check before assuming two distinct roles. No posted-date signal found — verify freshness manually.",
+    warn:true,
+    url:"https://job-boards.greenhouse.io/interworks/jobs/4566695006",
+    date:"2026-10-13"
+  },
+  {
+    title:"Analytics Engineer",
+    company:"N26",
+    mode:"hybrid",
+    modeLabel:"Hybrid-Germany · Berlin",
+    posted:"unknown",
+    salary:"not disclosed",
+    flag:"FLAGGED: sourced directly from N26's own official careers site (not a third-party aggregator mirror), but N26 has a history in this tracker of aggregator-listed Analytics Engineer roles that turned out stale or removed (Junior AE, generic AE, Senior AEGE role). Work mode not explicitly stated on this posting — treated as hybrid consistent with N26's general Berlin policy. Double-check it's genuinely live before applying.",
+    warn:true,
+    url:"https://n26.com/en-eu/careers/positions/8068837",
+    date:"2026-10-13"
   }
 ];
 
-const TODAY = "2026-10-12";
+const TODAY = "2026-10-13";
 const newToday = JOBS.filter(j=>j.date===TODAY);
 const byDate = {};
 JOBS.forEach(j=>{ (byDate[j.date] = byDate[j.date] || []).push(j); });
