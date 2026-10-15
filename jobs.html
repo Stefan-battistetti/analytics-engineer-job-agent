@@ -249,11 +249,11 @@ footer{
     <h1>Analytics Engineer Job Tracker</h1>
     <p>Daily-updated matches for an EU citizen based in Germany: fully remote (worldwide/EU/EMEA), onsite in Berlin, or hybrid anywhere in Germany.</p>
     <div class="stats">
-      <div class="stat"><div class="n" id="stat-new">2</div><div class="l">New today</div></div>
-      <div class="stat"><div class="n" id="stat-total">54</div><div class="l">Total tracked</div></div>
-      <div class="stat"><div class="n">2026-10-14</div><div class="l">Last updated</div></div>
+      <div class="stat"><div class="n" id="stat-new">1</div><div class="l">New today</div></div>
+      <div class="stat"><div class="n" id="stat-total">55</div><div class="l">Total tracked</div></div>
+      <div class="stat"><div class="n">2026-10-15</div><div class="l">Last updated</div></div>
     </div>
-    <div class="note"><strong>Note:</strong> as with every prior run (day 20), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (confirmed this run: WebFetch to arbeitnow.com, jobs.instaffo.com and jobs.lever.co all returned ENOTFOUND), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying.</div>
+    <div class="note"><strong>Note:</strong> as with every prior run (day 21), this environment's egress proxy still blocks direct fetches to job-board/company-careers domains (confirmed this run: WebFetch to www.arbeitnow.com, studyflix.de and www.remotely.de all returned ENOTFOUND), so listings are cross-referenced across multiple independent search sources rather than confirmed live by fetching each page. Click through and verify before applying. (This run also fixed a JS syntax error — a missing comma — in the previous version of this page that had silently broken the job list rendering.)</div>
   </div>
 
   <div class="filters" role="group" aria-label="Filter by work mode">
@@ -264,7 +264,7 @@ footer{
   </div>
 
   <section class="group">
-    <h2>New today <span class="count">— 2026-10-14</span></h2>
+    <h2>New today <span class="count">— 2026-10-15</span></h2>
     <div class="cards" id="new-today"></div>
   </section>
 
@@ -869,7 +869,7 @@ const JOBS = [
     warn:true,
     url:"https://n26.com/en-eu/careers/positions/8068837",
     date:"2026-10-13"
-  }
+  },
   {
     title:"Analytics Engineer",
     company:"Qonto",
@@ -893,10 +893,22 @@ const JOBS = [
     warn:true,
     url:"https://careers.wolt.com/en/jobs/analytics-engineering-lead/bed661d",
     date:"2026-10-14"
+  },
+  {
+    title:"Junior Data Analyst / Analytics Engineer (m/w/d)",
+    company:"Studyflix GmbH",
+    mode:"remote",
+    modeLabel:"Remote · Germany (Augsburg or remote, 100% home office)",
+    posted:"~3 days ago (per one mirror; unconfirmed)",
+    salary:"not disclosed",
+    flag:"E-learning/career platform. Role sits in the Data & Product Engineering team: ETL/ELT pipelines into Postgres/BigQuery, web-tracking infra, and dashboards for Sales/Finance/Product. Requires strong German (ideally C2) alongside Python/R and SQL. Cross-verified across the company's own careers page, StepStone, Arbeitnow and Jobgether mirrors. No hard posted-date confirmed — verify freshness manually before applying.",
+    warn:true,
+    url:"https://www.arbeitnow.com/jobs/companies/studyflix-gmbh/junior-data-analyst-analytics-engineer-augsburg-391041",
+    date:"2026-10-15"
   }
 ];
 
-const TODAY = "2026-10-14";
+const TODAY = "2026-10-15";
 const newToday = JOBS.filter(j=>j.date===TODAY);
 const byDate = {};
 JOBS.forEach(j=>{ (byDate[j.date] = byDate[j.date] || []).push(j); });

@@ -1,5 +1,28 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-10-15
+
+**Environment note:** Same as every prior run (day 21) — this environment's egress proxy denies external hosts (confirmed via WebFetch this run: `www.arbeitnow.com`, `studyflix.de` and `www.remotely.de` all returned `ENOTFOUND`). Liveness/eligibility inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
+
+**Also fixed this run:** the published `jobs.html` from 2026-10-14 had a JS syntax error (a missing comma between two objects in the `JOBS` array), which silently broke all rendering on the live Artifact page — "New today" and "All tracked matches" never populated, and the stat tiles were stuck showing stale hardcoded numbers. Fixed and verified with `node --check` before republishing.
+
+### Remote
+
+- **Junior Data Analyst / Analytics Engineer (m/w/d)** — Studyflix GmbH — Remote · Germany (Augsburg or remote, 100% home office) — Posted: ~3 days ago (per one mirror; unconfirmed) — Salary: not disclosed — [Apply](https://www.arbeitnow.com/jobs/companies/studyflix-gmbh/junior-data-analyst-analytics-engineer-augsburg-391041)
+  - E-learning/career platform (DACH). Role sits in the Data & Product Engineering team: ETL/ELT pipelines into Postgres/BigQuery, web-tracking infrastructure, data-quality checks, and dashboards for Sales/Finance/Product. Studyflix's own careers page lists it as "100% Home Office, ab sofort, in Augsburg oder remote" — fully remote option, Germany-based. Requires strong German (ideally C2) alongside Python/R and SQL — flagging as a fit consideration, not a region restriction. Cross-verified across Studyflix's own site, StepStone, Arbeitnow, remotely.de and Jobgether mirrors, all consistent on role/location. No hard calendar posted-date confirmed (remotely.de showed a relative "3 days ago," which may just reflect page-cache time rather than true post date) — verify freshness manually before applying.
+
+### Investigated and excluded this run
+
+- Upsun (formerly Platform.sh), "(Senior) Analytics Engineer" (Remote FR/DE/ES/UK) — both the plain and Senior titles resurfaced via aijobs.net, Remotive, Built In and Jobgether mirrors — same requisition already tracked via the Remote Woman Greenhouse posting (8659416002); a second Greenhouse ID (8431679002) found this run appears to be the same or a near-duplicate req, not independently confirmed as distinct — not tracked separately.
+- voize GmbH, "Senior Analytics Engineer (f/m/d)" (Berlin, conflicting remote/onsite/hybrid signals across mirrors) — a relative "vor 2 Tagen" (2 days ago) signal on remotely.de conflicts with two other mirrors showing an original post date of ~Sept 10–11, 2026 (~5 weeks old); treating the relative-days signal as unreliable page-cache noise and the calendar date as authoritative — excluded as stale, outside the ~14-day freshness window.
+- 1KOMMA5°, "Senior Analytics Engineer - Growth" (Berlin) — same already-tracked Personio requisition (job/2622556), resurfaced via new ZipRecruiter/Hokify/Climatebase/dailyremote mirrors (one ZipRecruiter mirror dated 22 Aug 2026) — not a new req.
+- Taxfix, "(Senior) Analytics Engineer - Marketing" (Berlin, hybrid) — confirmed "no longer accepting applications" via an Octopus Ventures/TaxScouts mirror — consistent with this listing's exclusion in a prior run; still expired.
+- Kion Group / Dematic, "Analytics Engineer" (Würzburg) — ZipRecruiter mirrors dated 11 Jun and 20 Jul 2026 (~3–4 months old) — stale, and work mode (onsite/hybrid/remote) could not be confirmed as fitting any of the three eligible categories.
+- Hetzner, "BI Engineer / Analytics Engineer" (Gunzenhausen) — posted ~7 Aug 2026 per one mirror (~10 weeks old) — stale; also not Berlin/hybrid-Germany-confirmed.
+- Studyflix GmbH, two internship-level listings in Berlin/Augsburg/Munich/Ulm (content marketing, business development, etc.) surfaced in the same search as the tracked Analytics Engineer role — not analytics roles, excluded on title/scope.
+- Datumo / Emagine Polska / Team Up / Nomagic (justjoin.it, Poland) — B2B contracts tied to Poland residency/location — excluded on scope, consistent with prior runs.
+- Many large Berlin/Germany employers already tracked (adsquare's three reqs, Stackfuel, N26, Qonto, Wolt, 1KOMMA5°, emnify, Raisin, Digistore24, Veeva, ABOUT YOU's several reqs, Taikonauten, Enpal, Eraneos, Maniko, Cosuno, Almedia, Statista, Trade Republic, Personio, FUNKE, Biztory, ICE, Purpose Green, Flink, InterWorks, Pergolux's three reqs, Currencies Direct, Infinite Lambda, Gemma Analytics, etc.) resurfaced via new aggregator mirrors/scrape IDs with the same requisitions already in memory or already excluded in prior runs — no genuinely new reqs among them this run.
+
 ## 2026-10-14
 
 **Environment note:** Same as every prior run (day 20) — this environment's egress proxy denies external hosts by organization policy (confirmed via proxy status; WebFetch to arbeitnow.com, jobs.instaffo.com and jobs.lever.co all returned `ENOTFOUND` this run). Liveness/eligibility inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
