@@ -1,5 +1,22 @@
 # Analytics Engineer Jobs (Germany/EU)
 
+## 2026-10-16
+
+**Environment note:** Same as every prior run (day 22) — this environment's egress proxy still denies external job-board/company-careers hosts (confirmed via WebFetch this run: `en.devjobs.de` and `www.arbeitnow.com` both returned `ENOTFOUND`). Liveness/eligibility inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
+
+**No new matches today.** Ran searches across all three eligible categories (remote worldwide/EU/EMEA, onsite-Berlin, hybrid-Germany) and the required source mix (Arbeitnow, RemoteOK, WWR, Wellfound, justjoin.it, Jobgether, StepStone, devjobs.de, Built In, TieTalent, Greenhouse/Accel company boards, general web + site-targeted searches for LinkedIn/Indeed.de/Xing/Himalayas/Otta/EU-Startups Jobs/EuroTechJobs/honeypot.io/Welcome to the Jungle). Every candidate surfaced was either already tracked, already excluded in a prior run, or failed verification below.
+
+### Investigated and excluded this run
+
+- "Rosental Organics," Senior Analytics Engineer (Berlin, hybrid, via a devjobs.de snippet) and "MAP Consulting & Solutions GmbH," Senior Analytics Engineer (Berlin, via a devjobs.de snippet) — both surfaced only from devjobs.de URLs sharing the same aggregator ID (62422) across unrelated title slugs (`application-analyst-berlin-62422`, `looker-berlin-62422`), a pattern consistent with a templated/mismatched aggregator snippet rather than a distinct real requisition. Independent searches for either company's own careers page or any other mirror turned up nothing — "Rosental Organics" only matched an unrelated Berlin organic-grocery retailer (Denns BioMarkt apprenticeships), and "MAP Consulting & Solutions" could not be found at all. Could not WebFetch devjobs.de to verify directly (proxy-blocked). Excluded as unverifiable/likely spurious.
+- SLAY, Analytics Engineer (Berlin, onsite, €100k–130k) — confirmed via SLAY's own Accel job board as posted Jan 12, 2025 — ~21 months old, far outside the ~14-day freshness window. Stale.
+- FREENOW, Analytics Engineer (Hamburg, with Berlin/Barcelona also eligible; Greenhouse job 7189275) — same recurring evergreen Greenhouse-family listing already excluded in prior runs (2026-10-08/09) as unconfirmable/long-recycled; no new date signal found this run — still excluded.
+- Gemma Analytics, Junior Analytics Engineer (Berlin) — same already-tracked requisition (join.com 14070920 / arbeitnow 360173), resurfaced via a new arbeitnow mirror ID (418831) — not a new req.
+- Statista GmbH, Analytics Engineer / Data Analytics Engineer (Hamburg or Berlin) — ZipRecruiter mirrors dated 17 Jun, 20 Jul, 23 Jul and 23 Aug 2026 (~2–4 months old) — stale, consistent with prior exclusions.
+- 1KOMMA5°, Senior Analytics Engineer – Growth (Berlin) — same already-tracked Personio requisition (job/2622556), resurfaced via new arbeitnow/devjobs mirrors — not a new req.
+- Qonto, Analytics Engineer / Analytics Engineering Lead (Wolt) and other already-tracked Berlin/Germany employers (adsquare, Stackfuel, N26, Raisin, Digistore24, Veeva, ABOUT YOU, Taikonauten, Enpal, Eraneos, Maniko, Cosuno, Almedia, Trade Republic, Personio, FUNKE, Forte Digital, InterWorks, Pergolux, emnify, Jobandtalent, Flink, Trusted Shops, Biztory, Hoffmann Group) resurfaced via new aggregator mirrors/scrape IDs with the same requisitions already in memory or already excluded in prior runs — no genuinely new reqs among them this run.
+- Datumo / Emagine Polska / Team Up (justjoin.it, Poland) — B2B contracts tied to Poland residency/location — excluded on scope, consistent with prior runs.
+
 ## 2026-10-15
 
 **Environment note:** Same as every prior run (day 21) — this environment's egress proxy denies external hosts (confirmed via WebFetch this run: `www.arbeitnow.com`, `studyflix.de` and `www.remotely.de` all returned `ENOTFOUND`). Liveness/eligibility inferred entirely from WebSearch cross-referencing across 2+ independent sources, not by fetching the live page.
